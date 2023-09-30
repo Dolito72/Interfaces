@@ -150,6 +150,8 @@ h3{
 .letra-btn-grande-hover {
     color: var(--Color-secundario-sombra, #2B1489);
 }
+
+/* Pagina Loguin    */
 .container-loguin {
    display: flex;
     flex-direction: column;
@@ -331,9 +333,14 @@ h3{
     
 }
 
+.btn-log{
+    text-decoration: none;
+}
+
 .btn-loguearse{
     margin: auto;
     margin-top: 3%;
+   
     
 }
 .div-footer{

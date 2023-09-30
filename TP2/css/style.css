@@ -5,7 +5,7 @@
     font-family: var(--font);
 }
 
-/* Variables */
+/* -----------------------------Variables------------------------------- */
 
 *:root {
 
@@ -29,8 +29,7 @@
 
 }
 
-/*   Fuentes  */
-
+/* Fuentes    */
 /* H1 Titulo Principal */
 h1 {
     font-size: 35px;
@@ -46,6 +45,7 @@ h2 {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+
 }
 
 /* H3 Titulo Terciario */
@@ -106,30 +106,34 @@ h3 {
 
 }
 
-.bton-grande-activado {
+.btn-grande-activado {
     background: var(--Color-secundario, #5335CC);
     border: 2px solid var(--Color-primario-luz-2, #ECEDF5);
 }
 
-.bton-grande-desactivado {
+.btn-grande-desactivado {
     background: var(--Color-primario-luz-2, #ECEDF5);
-    border:none;
+    border: none;
 }
 
-.bton-grande-hover {
+.btn-main:hover {
+    background-color: var(--primario-s1);
+}
+
+.btn-grande:hover {
     background: var(--Color-primario-luz-1, #8C76E7);
     border: none;
 }
 
-.bton-grande-clickeado {
+.btn-grande-clickeado {
     background: var(--Color-primario-luz-2, #ECEDF5);
     border: 2px solid var(--Color-secundario-sombra, #2B1489);
 }
 
 .letra-btn-grande {
     display: flex;
-    width: 133.537px;
-    height: 22.909px;
+    width: 134px;
+    height: 23px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -138,16 +142,513 @@ h3 {
 
 .letra-btn-grande-activado {
     color: var(--Color-primario-luz-2, #ECEDF5);
+    
 }
 
 .letra-btn-grande-desactivado {
     color: var(--Color-secundario-luz-1, #8C76E7);
 }
 
-.letra-btn-grande-hover {
+.letra-btn-grande:hover {
     color: var(--Color-primario-luz-2, #ECEDF5);
 }
 
-.letra-btn-grande-hover {
+.letra-btn-grande-clickeado {
     color: var(--Color-secundario-sombra, #2B1489);
 }
+
+/* -----------------------------Pagina Loguin----------------------------------    */
+.container-loguin {
+    display: flex;
+    flex-direction: column;
+    /* me posiciono en el centro*/
+    margin: 0;
+    /*width: 100%; 
+    /*height:100vh;*/
+    width: 1352px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    background-image: url('../images/fondo-loguin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);*/
+
+}
+
+
+.container-logo {
+    margin: auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    flex-shrink: 0;
+
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.form-loguin {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 530px;
+    height: 761px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: var(--Color-secundario-luz-1, #8C76E7);
+
+
+
+}
+
+.titulo-loguin {
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+
+}
+
+#btn-google {
+    margin: 2%;
+    width: 349px;
+    height: 52px;
+    background-color: var(--Color-primario-luz-2, #ECEDF5);
+    border: none;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+}
+
+#interior-btn-google {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    width: 310.695px;
+    height: 28.364px;
+
+
+
+}
+
+#letra-google {
+    padding-left: 3%;
+    color: var(--Color-primario-sombra, #383839);
+    text-align: center;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+
+}
+
+#icono-google {
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+}
+
+#btn-facebook {
+    margin: 1%;
+    width: 349px;
+    height: 52px;
+    background-color: var(--Color-secundario, #5335CC);
+    border: none;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+}
+
+#interior-btn-face {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 310.695px;
+    height: 28.364px;
+}
+
+#letra-face {
+    padding-left: 3%;
+    color: var(--Color-primario-luz-2);
+    text-align: center;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+
+}
+
+#icono-face {
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+}
+
+.linea {
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.loguearse {
+    display: flex;
+    flex-direction: column;
+    /*text-align: center;*/
+}
+
+.letra-loguin {
+    margin-right: auto;
+    color: var(--Color-secundario-sombra);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.log {
+    margin: 2%;
+    padding: 2%;
+    width: 360px;
+    height: 52px;
+    background-color: var(--Color-primario-luz-2);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.btn-log {
+    text-decoration: none;
+}
+
+.btn-loguearse {
+    margin: auto;
+    margin-top: 3%;
+}
+
+/*-------------------------------Footer------------------------*/
+.div-footer {
+    width: 1352px;
+    height: 363px;
+    flex-shrink: 0;
+    margin: 0;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    background: var(--Color-secundario-sombra, #2B1489);
+}
+
+#redes-footer {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    width: 369px;
+    height: 363px;
+    flex-shrink: 0;
+    background: var(--Color-primario-luz-2, #ECEDF5);
+}
+
+#logo-footer {
+    margin-top: 20%;
+    justify-content: center;
+    margin-left: 13%;
+    width: 249px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+#letra-footer {
+    margin-bottom: 3%;
+}
+
+#texto-redes-footer {
+    margin-top: 20%;
+    margin-right: 10%;
+    width: 310px;
+
+    color: var(--Color-secundario-sombra, #2B1489);
+
+
+}
+
+#iconos-redes-footer {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 228.949px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+#soporte-ayuda-footer {
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 512px;
+    height: 228px;
+    flex-shrink: 0;
+    color: var(--Color-primario-luz-2);
+}
+
+#centro-footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#soporte-footer {
+    display: inline-flex;
+    margin-right: 10%;
+    padding: 18px 0px 61px 7px;
+    flex-direction: column;
+    gap: 21px;
+
+
+}
+
+#ayuda-footer {
+    display: inline-flex;
+    padding: 18px 0px 61px 7px;
+    flex-direction: column;
+
+    gap: 21px;
+}
+
+#terminos-footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 507.651px;
+    height: 17.095px;
+    flex-shrink: 0;
+    color: var(--Color-primario-luz-2);
+}
+
+#categorias-footer {
+    display: flex;
+    flex-direction: column;
+    width: 337px;
+    height: 363px;
+    flex-shrink: 0;
+}
+
+#cat-footer {
+    margin-top: 20%;
+    text-align: right;
+    color: var(--Color-primario-luz-2);
+}
+
+#iconos-cat-footer {
+    margin-top: 5%;
+    margin-left: 25%;
+
+    width: 173px;
+    height: 224px;
+    flex-shrink: 0;
+}
+
+/* -----------------------------Pagina Registro----------------------------------    */
+
+.container-registro {
+    display: flex;
+    flex-direction: column;
+    /* me posiciono en el centro*/
+    margin: 0;
+    /*width: 100%; 
+     /*height:100vh;*/
+    width: 1352px;
+    height: 1800px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    background-image: url('../images/fondo-loguin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);*/
+
+}
+
+#container-header-registro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+
+#progreso {
+    margin-bottom: 10%;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height: 1200px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: var(--Color-secundario-luz-1, #8C76E7);
+}
+
+#encabezado-datos-personales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letra-reg {
+    color: var(--Color-secundario-sombra, #2B1489);
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+#linea-reg {
+    width: 354px;
+    height: 3px;
+    margin-left: 18%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    flex-shrink: 0;
+
+}
+
+#datos-pesonales{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 350px;
+    height: 380px;
+    
+   
+}
+
+.letras-label{
+    
+    color: var(--Color-secundario-sombra);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 15%;
+    /*margin-bottom: 3%;*/
+   /* margin-top: 6%;*/
+
+
+}
+
+.input-reg{
+    width: 349px;
+    height: 52px;
+    flex-shrink: 0;
+   
+    border-radius: 20px;
+    border: none;
+    background: var(--Color-primario-luz-2, #ECEDF5);
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 3%;
+}
+
+#datos-cuenta{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /*gap: 6px;*/
+    width: 350px;
+    height: 150px;
+    
+}
+
+    #encabezado-datos {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .letras-label-cta{
+    color: var(--Color-secundario-sombra);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 24%;
+        margin-bottom: 1%;
+       /* margin-top: 6%;*/
+    
+    
+    }
+    
+    .input-reg-cta{
+        width: 349px;
+        height: 52px;
+        flex-shrink: 0;
+      
+        border-radius: 20px;
+        border: none;
+        background: var(--Color-primario-luz-2, #ECEDF5);
+        margin-left: 24%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        padding: 3%;
+    }
+
+    #registracion{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    #img-captcha{
+        width: 302px;
+        height: 80px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        margin-top: 40%;
+        margin-left: 22%;
+        
+    }
+
+    #btn-reg{
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 5%;
+        padding: 10px;
+        padding-left: 15%;
+        
+    }
