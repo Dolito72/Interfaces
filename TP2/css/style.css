@@ -29,7 +29,7 @@
 
 }
 
-/* Fuentes    */
+/* -----------------------Fuentes ----------------------------   */
 /* H1 Titulo Principal */
 h1 {
     font-size: 35px;
@@ -95,7 +95,7 @@ h3 {
     line-height: normal;
 }
 
-/* Botones */
+/* ------------------------------Botones -------------------------------------*/
 
 .btn-grande {
     width: 150px;
@@ -116,9 +116,7 @@ h3 {
     border: none;
 }
 
-.btn-main:hover {
-    background-color: var(--primario-s1);
-}
+
 
 .btn-grande:hover {
     background: var(--Color-primario-luz-1, #8C76E7);
@@ -142,7 +140,7 @@ h3 {
 
 .letra-btn-grande-activado {
     color: var(--Color-primario-luz-2, #ECEDF5);
-    
+
 }
 
 .letra-btn-grande-desactivado {
@@ -157,7 +155,7 @@ h3 {
     color: var(--Color-secundario-sombra, #2B1489);
 }
 
-/* -----------------------------Pagina Loguin----------------------------------    */
+/* -----------------------------Página Loguin----------------------------------    */
 .container-loguin {
     display: flex;
     flex-direction: column;
@@ -348,14 +346,28 @@ h3 {
 
 .btn-log {
     text-decoration: none;
+    padding-left: 5%;
 }
 
 .btn-loguearse {
     margin: auto;
     margin-top: 3%;
+    transition: transform 7s;
+    box-shadow: inset 0 0 0 0 #06466b;
+    -webkit-transition: ease-out 0.6s;
+    -moz-transition: ease-out 0.6s;
+    transition: ease-out 0.6s;
+
 }
 
-/*-------------------------------Footer------------------------*/
+.btn-loguearse:hover {
+    box-shadow: inset 0 100px 0 0 #7c7f81;
+
+}
+
+
+
+/*-------------------------------------------Footer--------------------------------------*/
 .div-footer {
     width: 1352px;
     height: 363px;
@@ -543,18 +555,18 @@ h3 {
 
 }
 
-#datos-pesonales{
+#datos-pesonales {
     display: flex;
     flex-direction: column;
     gap: 13px;
     width: 350px;
     height: 380px;
-    
-   
+
+
 }
 
-.letras-label{
-    
+.letras-label {
+
     color: var(--Color-secundario-sombra);
     font-size: 20px;
     font-style: normal;
@@ -562,16 +574,16 @@ h3 {
     line-height: normal;
     margin-left: 15%;
     /*margin-bottom: 3%;*/
-   /* margin-top: 6%;*/
+    /* margin-top: 6%;*/
 
 
 }
 
-.input-reg{
+.input-reg {
     width: 349px;
     height: 52px;
     flex-shrink: 0;
-   
+
     border-radius: 20px;
     border: none;
     background: var(--Color-primario-luz-2, #ECEDF5);
@@ -581,74 +593,150 @@ h3 {
     padding: 3%;
 }
 
-#datos-cuenta{
+#datos-cuenta {
     display: flex;
     flex-direction: column;
     margin: 0;
     /*gap: 6px;*/
     width: 350px;
     height: 150px;
-    
+
 }
 
-    #encabezado-datos {
-        display: flex;
-        flex-direction: column;
-       
-    }
+#encabezado-datos {
+    display: flex;
+    flex-direction: column;
 
-    .letras-label-cta{
+}
+
+.letras-label-cta {
     color: var(--Color-secundario-sombra);
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-left: 24%;
-        margin-bottom: 1%;
-       /* margin-top: 6%;*/
-    
-    
-    }
-    
-    .input-reg-cta{
-        width: 349px;
-        height: 52px;
-        flex-shrink: 0;
-      
-        border-radius: 20px;
-        border: none;
-        background: var(--Color-primario-luz-2, #ECEDF5);
-        margin-left: 24%;
-        margin-top: 1%;
-        margin-bottom: 5%;
-        padding: 3%;
-    }
-
-    #registracion{
-        display: flex;
-        flex-direction: column;
-        
-    }
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 24%;
+    margin-bottom: 1%;
+    /* margin-top: 6%;*/
 
 
-    #img-captcha{
-        width: 302px;
-        height: 80px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        margin-top: 40%;
-        margin-left: 22%;
-        
-    }
+}
 
-    #btn-reg{
-        width: 250px;
-        height: 60px;
-        font-size: 20px;
-        font-weight: 700;
-        margin: auto;
-        margin-top: 5%;
-        padding: 10px;
-        padding-left: 15%;
-        
-    }
+.input-reg-cta {
+    width: 349px;
+    height: 52px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    border: none;
+    background: var(--Color-primario-luz-2, #ECEDF5);
+    margin-left: 24%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+
+#registracion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#img-captcha {
+    width: 302px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin-top: 40%;
+    margin-left: 22%;
+
+}
+
+#btn-reg {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    padding-left: 10%;
+    transition: transform 4s, background-color 4s;
+
+}
+
+#btn-reg:hover {
+    transform: rotate3d(2, 2, 2, 360deg);
+    background-color: #2B1489;
+}
+
+/*---------------------------Página 4 en Línea-----------------------*/
+#body-juego {
+    background-color: var(--Color-primario-luz-2);
+}
+
+#menu {
+    width: 1352px;
+    height: 85px;
+    flex-shrink: 0;
+    background-color: #2B1489;
+    display: flex;
+    justify-content: center;
+}
+
+#breadcrumb {
+    margin-top: 3%;
+    margin-left: 1%;
+
+}
+
+#bread {
+    color: var(--Color-secundario-sombra);
+    margin-left: 1%;
+}
+
+#vector-bread {
+    margin-left: 1%;
+
+}
+
+#home {
+    text-decoration: none;
+    color: #000;
+}
+
+#container-juego {
+    width: 1351px;
+    height: 557px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#img-juego {
+    display: flex;
+    position: relative;
+    width: 900px;
+    height: 557px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+#btn-juego {
+    width: 274px;
+    height: 66px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
