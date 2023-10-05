@@ -1,0 +1,311 @@
+/*--------------------Mobile----------------------*/
+
+/*--------------------General----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+ul,
+ol {
+list-style: none;
+}
+  
+.category-title h2 {
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    font-weight: 80%;
+    font-size: 80%;
+}
+
+/*--------------------Header----------------------*/
+body {
+    background-color: var(--Color-primario-sombra, #383839);
+}
+header {
+    background-color: var(--Color-secundario-sombra, #2B1489);
+  
+}
+main {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+  }
+  .gap-8 {
+    gap: 8px;
+  }
+  .gap-16 {
+    gap: 16px;
+  }
+  .gap-24 {
+    gap: 24px;
+  }
+
+.container {
+    padding: 0 8px;
+}
+
+.container> * {
+    margin: 0 auto;
+  }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+.header-container .flex {
+display: flex;
+padding: 16px 0;
+align-items: center;
+}
+
+.header-container .logo-img {
+width: 202px;
+height: 45px;
+}
+
+.btn-icono {
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+  }
+
+.btn-icono,
+.btn-icono img {
+max-width: 35px;
+max-height: 35px;
+}
+
+
+.logo-img {
+    width: 270px;
+    height: auto; /*60px*/
+    
+  }
+
+/*--------------------Carrusel----------------------*/
+
+
+.category-cards-container {
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overflow-scroll {
+overflow-x: scroll;
+}
+
+.overflow-scroll {
+/* Hide the scrollbar */
+scrollbar-width: thin;
+scrollbar-color: transparent transparent;
+}
+
+.game-card {
+    position: relative;
+    max-width: 292px;
+    height: auto;
+   /* background: var(--main-darker, purple);*/
+    border-radius: 27px;
+    /*box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);*/
+
+} /*VEEEER*/
+
+.game-card img {
+    max-width: 292px;
+    height: auto;
+    border-radius: 27px;
+}
+
+/*.game-card-x4 {
+    display: flex;
+    
+}
+.game-card-x4 .game-card img {
+    max-width: 144px;
+    height: 100px;
+    border-radius: 13.5px;
+}*/
+
+.game-card-x4 {
+    max-width: 292px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Dos columnas iguales */
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px; /* Espacio entre las imágenes */
+    grid-row-gap: 5px; /* Espacio entre las filas */
+}
+
+.game-card-x4 .game-card img {
+    max-width: 146px;
+    height: auto;
+    text-align: center; /* Para centrar la imagen dentro de su contenedor */
+}
+
+.game-card .card-bottom {
+margin-top: 16px;
+display: flex;
+flex-direction: column;
+padding: 0 12px;
+}
+
+
+
+/*--------------------Footer----------------------*/
+
+ 
+.container-footer {
+    width: 1352px;
+    height: 363px;
+    flex-shrink: 0;
+    margin: 0;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    background: var(--Color-secundario-sombra, #2B1489);
+}
+
+#redes-footer {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    width: 369px;
+    height: 363px;
+    flex-shrink: 0;
+    background: var(--Color-primario-luz-2, #ECEDF5);
+}
+
+#logo-footer {
+    margin-top: 20%;
+    justify-content: center;
+    margin-left: 13%;
+    width: 249px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+#letra-footer {
+    margin-bottom: 3%;
+}
+
+#texto-redes-footer {
+    margin-top: 20%;
+    margin-right: 10%;
+    width: 310px;
+
+    color: var(--Color-secundario-sombra, #2B1489);
+
+
+}
+
+#iconos-redes-footer {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 228.949px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+#soporte-ayuda-footer {
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 512px;
+    height: 228px;
+    flex-shrink: 0;
+    color: var(--Color-primario-luz-2);
+}
+
+#centro-footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#soporte-footer {
+    display: inline-flex;
+    margin-right: 10%;
+    padding: 18px 0px 61px 7px;
+    flex-direction: column;
+    gap: 21px;
+
+
+}
+
+#ayuda-footer {
+    display: inline-flex;
+    padding: 18px 0px 61px 7px;
+    flex-direction: column;
+
+    gap: 21px;
+}
+
+#terminos-footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 507.651px;
+    height: 17.095px;
+    flex-shrink: 0;
+    color: var(--Color-primario-luz-2);
+}
+
+#categorias-footer {
+    display: flex;
+    flex-direction: column;
+    width: 337px;
+    height: 363px;
+    flex-shrink: 0;
+}
+
+#cat-footer {
+    margin-top: 20%;
+    text-align: right;
+    color: var(--Color-primario-luz-2);
+}
+
+#iconos-cat-footer {
+    margin-top: 5%;
+    margin-left: 25%;
+
+    width: 173px;
+    height: 224px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+/*estilos para desktop*/
+@media only screen and (min-width:600px) {
+
+}
