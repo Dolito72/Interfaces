@@ -1,3 +1,7 @@
+/*--------------------Mobile----------------------*/
+
+/*--------------------General----------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +19,24 @@ a {
     color: inherit;
   }
 
+ul,
+ol {
+list-style: none;
+}
+  
+.category-title h2 {
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    font-weight: 80%;
+    font-size: 80%;
+}
+
+/*--------------------Header----------------------*/
+body {
+    background-color: var(--Color-primario-sombra, #383839);
+}
 header {
     background-color: var(--Color-secundario-sombra, #2B1489);
-    
+  
 }
 main {
     min-height: 100vh;
@@ -73,25 +92,85 @@ height: 45px;
 
 .btn-icono,
 .btn-icono img {
-max-width: 24px;
-max-height: 24px;
+max-width: 35px;
+max-height: 35px;
 }
-
-
 
 
 .logo-img {
     width: 270px;
-    height: 60px;
+    height: auto; /*60px*/
     
   }
 
+/*--------------------Carrusel----------------------*/
 
 
+.category-cards-container {
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+.overflow-scroll {
+overflow-x: scroll;
+}
 
+.overflow-scroll {
+/* Hide the scrollbar */
+scrollbar-width: thin;
+scrollbar-color: transparent transparent;
+}
 
+.game-card {
+    position: relative;
+    max-width: 292px;
+    height: auto;
+   /* background: var(--main-darker, purple);*/
+    border-radius: 27px;
+    /*box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);*/
 
+} /*VEEEER*/
+
+.game-card img {
+    max-width: 292px;
+    height: auto;
+    border-radius: 27px;
+}
+
+/*.game-card-x4 {
+    display: flex;
+    
+}
+.game-card-x4 .game-card img {
+    max-width: 144px;
+    height: 100px;
+    border-radius: 13.5px;
+}*/
+
+.game-card-x4 {
+    max-width: 292px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Dos columnas iguales */
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px; /* Espacio entre las imágenes */
+    grid-row-gap: 5px; /* Espacio entre las filas */
+}
+
+.game-card-x4 .game-card img {
+    max-width: 146px;
+    height: auto;
+    text-align: center; /* Para centrar la imagen dentro de su contenedor */
+}
+
+.game-card .card-bottom {
+margin-top: 16px;
+display: flex;
+flex-direction: column;
+padding: 0 12px;
+}
 
 
 
