@@ -1,18 +1,21 @@
+const btnRegistrar = document.getElementById("btn-reg");
 
-
-let btnRegistrar = document.getElementById("btn-reg");
-
-let botonMostrarOcultar = document.getElementById("btn-jugar");
-let divOculto = document.getElementById("div-instrucciones-oculto");
+//let botonMostrarOcultar = document.getElementById("btn-jugar");
+//let divOculto = document.getElementById("div-instrucciones-oculto");
 
 btnRegistrar.addEventListener("click", function() {
   // Aplicar la animación al botón
-  this.style.animation = "animacionBoton 1s";
+  this.style.animation = "animacionBoton 5s";
+ // Cambiar el texto del botón
+ btnRegistrar.textContent = "Redirigiendo...";
+ console.log(this.click.target.value);
+
+
 
   // Después de que termine la animación, redirigir al enlace
   setTimeout(() => {
-      window.location.href = document.getElementById("index").href;
-  }, 1000); // Cambia el valor a la duración de tu animación en milisegundos
+      window.location.href = document.getElementById("loading").href;
+  }, 5000); // Cambia el valor a la duración de tu animación en milisegundos
 });
 
 
