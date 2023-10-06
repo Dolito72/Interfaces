@@ -158,6 +158,10 @@ max-height: 35px;
 
 .overflow-scroll {
 overflow-x: scroll;
+
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -224,20 +228,83 @@ li.game-card-1x1 {
 
 footer {
     display: block;
-    position: relative;
-    height: 900px;
 }
 
-.footer-left {
-    display:block;
+.footer-container{
+    padding: 20px 0;
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    background: var(--Color-primario-sombra, #383839);
+    scroll-behavior: smooth;
+}
+
+.content-container {
+    padding: 0 16px;
+}
+
+.footer-top {
+    display: block;
     background-color: var(--Color-primario-luz-2, #ECEDF5);
+    justify-content: space-around;
+    height: 170px;
 }
 
-
-
+.logo-footer, .redes-footer{
+    display: flex;
+    width: 100%;
+}
 .logo-footer {
+    justify-content: center;
     align-items: center;
-    width: 50%;
+}
+.logo-footer a img {
+    width: 90%;
+    
+}
+
+.redes-footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding:0;
+    margin-top: 5%;
+}
+
+.texto-redes-footer {
+    width: 100%;
+    height: 50%;
+    font-size: 90%;
+    color: var(--Color-secundario-sombra, #2B1489);
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.icones-redes-footer {
+    width: 100%;
+    margin: 0;
+    padding:0;
+    margin-top: 15%;
+    padding-top: 15%;
+    
+}
+
+.iconos-redes-footer a img {
+   margin: 0;
+   padding: 0;
+}
+
+.soporte-ayuda-categorias-footer {
+    display: block;
+    background-color: var(--Color-secundario-sombra, #2B1489);
+}
+
+.item-footer {
+    width: 100%;
+}
+
+.item-footer h2, .item-footer p {
+    font-size: 90%;
 }
 
 
@@ -245,6 +312,11 @@ footer {
 
 
 
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
 
 /*
 
