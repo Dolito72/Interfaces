@@ -1,41 +1,48 @@
-const btnRegistrar = document.getElementById("btn-reg");
-
-//let botonMostrarOcultar = document.getElementById("btn-jugar");
-//let divOculto = document.getElementById("div-instrucciones-oculto");
-
-btnRegistrar.addEventListener("click", function() {
+//btnRegistrar.addEventListener("click", function() {
   // Aplicar la animación al botón
-  this.style.animation = "animacionBoton 5s";
+//  this.style.animation = "animacionBoton  animation-duration: 3s";
  // Cambiar el texto del botón
- btnRegistrar.textContent = "Redirigiendo...";
- console.log(this.click.target.value);
+ //btnRegistrar.innerHTML = "Redirigiendo.....";
+ //btnRegistrar.textContent = "Redirigiendo...";
+ //console.log(this.click.target.value);
 
 
 
   // Después de que termine la animación, redirigir al enlace
-  setTimeout(() => {
-      window.location.href = document.getElementById("loading").href;
-  }, 5000); // Cambia el valor a la duración de tu animación en milisegundos
-});
+ // setTimeout(function() {
+//    window.location.href = './loading.html';
+//}, 2000);
 
-
-//desplegar instrucciones juego
-
-
-
-// Agregar un manejador de eventos al hacer clic en la imagen
-//botonMostrarOcultar.addEventListener("click", function() {
-    // Toggle para mostrar u ocultar el div
-   // if (divOculto.style.display === "none" || divOculto.style.display === "") {
-//        divOculto.style.display = "block";
- //   } else {
- //       divOculto.style.display = "none";
-//    }
- //   divOculto.classList.toggle('instruc-mostrar');
 //});
 
+// Función para crear y mostrar confetis
 
-botonMostrarOcultar.addEventListener("click", mostrarInstruc);
-function mostrarInstruc() {
-    divOculto.classList.toggle("instruc-mostrar");
+// Obtener referencias a elementos HTML
+let mostrarConfetiBtn = document.getElementById("btn-reg");
+let contenedorConfeti = document.getElementById("contenedorConfeti");
+
+
+function mostrarConfetis() {
+  for (let i = 0; i < 20; i++) { // creo 20 confetis
+      let confeti = document.createElement("div");
+      confeti.classList.add("confeti");
+      contenedorConfeti.appendChild(confeti);
+
+      // Establece posiciones aleatorias para los confetis
+      const randomX = Math.random() * window.innerWidth;
+      const randomY = Math.random() * window.innerHeight;
+      confeti.style.left = randomX + "px";
+      confeti.style.top = randomY + "px";
+  }
+  contenedorConfeti.style.display = "flex"; // Mostrar el contenedor
 }
+
+// Agregar un manejador de eventos al botón "Mostrar Confeti"
+mostrarConfetiBtn.addEventListener("click", function() {
+  mostrarConfetis();
+
+  // Después de 5 segundos, redirigir a la página de "Loading"
+  setTimeout(function() {
+      window.location.href = "loading.html"; // Cambia a la URL de tu página de loading
+  }, 3000); // Duración de la animación de confeti (en milisegundos)
+});
