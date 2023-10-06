@@ -5,17 +5,17 @@ const btnRegistrar = document.getElementById("btn-reg");
 
 btnRegistrar.addEventListener("click", function() {
   // Aplicar la animación al botón
-  this.style.animation = "animacionBoton 1s";
+  this.style.animation = "animacionBoton 5s";
  // Cambiar el texto del botón
  btnRegistrar.textContent = "Redirigiendo...";
-
+ console.log(this.click.target.value);
 
 
 
   // Después de que termine la animación, redirigir al enlace
   setTimeout(() => {
       window.location.href = document.getElementById("loading").href;
-  }, 1000); // Cambia el valor a la duración de tu animación en milisegundos
+  }, 5000); // Cambia el valor a la duración de tu animación en milisegundos
 });
 
 
