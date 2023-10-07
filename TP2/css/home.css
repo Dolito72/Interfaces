@@ -98,11 +98,6 @@ max-height: 35px;
 }
 
 
-.logo-img {
-    width: 270px;
-    height: auto; /*60px*/
-    
-  }
 
 /*--------------------Carrusel----------------------*/
 .conteiner-carrusel-first {
@@ -245,7 +240,7 @@ footer {
     display: block;
     background-color: var(--Color-primario-luz-2, #ECEDF5);
     justify-content: space-around;
-    height: 170px;
+    height: 200px;
 }
 
 .logo-footer, .redes-footer{
@@ -295,16 +290,33 @@ footer {
 }
 
 .soporte-ayuda-categorias-footer {
-    display: block;
+    display: flex;
     background-color: var(--Color-secundario-sombra, #2B1489);
+    padding-top: 2%;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+.ayuda-soporte {
+    display: block;
 }
 
 .item-footer {
     width: 100%;
+    height: 33.33%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
 }
 
+.item-footer h2 {
+    padding-bottom: 2%;
+}
 .item-footer h2, .item-footer p {
     font-size: 90%;
+}
+
+.item-footer img {
+   width: 30%;
 }
 
 
