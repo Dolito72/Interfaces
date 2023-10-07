@@ -11,11 +11,74 @@
 </head>
 
 <body id="body-juego">
-    <nav>
-        <div id="menu">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="flex">
+                    <button id="hamb" class="btn-icono "><img src=".//images/home/Boton-Hamburguesa.png"
+                            alt="Boton Hamburguesa"></button>
+                </div>
+                <nav class="menu-hamb">
+                    <ul>
+                        <li><a href="#">Recomendados para vos</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="#">Deportes</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Puzzles</a></li>
+                        <li><a href="#">Acción</a></li>
+                    </ul>
+                </nav>
+                <div class="flex">
+                    <a href="home.html">
+                        <img class="logo-img" src="images/home/Logo.png" alt="logo">
+                    </a>
+                </div>
 
+                <div id="carrito-perfil" class="flex">
+                    <button id="carrito" class="carrito"><img src=".//images/home/carrito.png" alt="carrito"></button>
+                    <button id="sesion" class="btn-icono"><img src=".//images/home/Avatar.png" alt="Sesion"></button>
+                </div>
+                <nav class="menu-usuario">
+                    <ul>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mis Compras</a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mis compras.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mis Favoritos </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mis favoritos.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mi Carrito </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mi carrito.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mi cuenta </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mi cuenta.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Cerrar sesión</a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Cerrar Sesion.png" alt="">
+                        </div>
+                    </ul>
+                </nav>
+                <nav class="menu-carrito">
+                    <ul>
+                        <div class="items-usuario">
+                            <li> <a href="#">Carrito de compras </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mi carrito.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> Producto </li>
+                            <p>SubTotal</p>
+                        </div>
+                        <p>El carrito esta vacío</p>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </header>
     <div id="breadcrumb">
         <p class="body-bold"><span><a id="home" href="index.html">Home</a> </span><span> <img id="vector-bread"
                     src="./images/bread.png" alt="bread"></span><span id="bread">4 en Línea</span></p>
@@ -127,9 +190,9 @@
         <div id="container-comentarios">
             <div id="form-coment">
                 <div id="input-coment">
-                    <div id="letra-input-coment">
-                        <p class="body">Dejanos tu comentario</p>
-                    </div>
+                    <input id="input-coment-2" placeholder="Dejanos tu comentario">
+
+
                     <div id="avatar-conf">
                         <img id="avatar-input" src="./images/Avatar.png" alt="avatar">
                     </div>
@@ -192,13 +255,13 @@
                         </div>
                         <div class="input-coment-usuarios">
                             <div id="letra-input-coment">
-                                <p class="body">Mmmm,  esperaba otra cosa, me desilucionó.</p>
+                                <p class="body">Mmmm, esperaba otra cosa, me desilucionó.</p>
                             </div>
                             <div id="avatar-conf">
                                 <img id="avatar-input" src="./images/Avatar8.png" alt="avatar">
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -248,6 +311,7 @@
         </footer>
     </div>
     <script src="./js/script.js"></script>
+    
 </body>
 
 </html>

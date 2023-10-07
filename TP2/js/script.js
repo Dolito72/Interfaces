@@ -34,6 +34,7 @@ function mostrarConfetis() {
       confeti.style.left = randomX + "px";
       confeti.style.top = randomY + "px";
   }
+
   contenedorConfeti.style.display = "flex"; // Mostrar el contenedor
 }
 
@@ -43,6 +44,6 @@ mostrarConfetiBtn.addEventListener("click", function() {
 
   // Después de 5 segundos, redirigir a la página de "Loading"
   setTimeout(function() {
-      window.location.href = "loading.html"; // Cambia a la URL de tu página de loading
+      window.location.href = "loguin.html"; // Cambia a la URL de tu página de loading
   }, 3000); // Duración de la animación de confeti (en milisegundos)
 });
