@@ -525,7 +525,6 @@ margin-top: 1%;
 .carrito {
     width: 55px;
     height: 60px;
-
     border-radius: 60%;
 }
 
@@ -553,10 +552,6 @@ margin-top: 1%;
     margin-right: 8%;
    
 }
-
-
-
-
 
 .btn-icono,
 .btn-icono img {
@@ -1469,8 +1464,8 @@ margin-left: 8%;
 #cont-coment{
     height: 500px; /* Ancho del contenedor */
     margin-left: 8%;
-    overflow-y: auto; 
-   /*overflow-y: hidden;*/
+    overflow-y:auto; 
+   
     /* Habilitar el scroll horizontal si el contenido excede el ancho */
     white-space: nowrap; /* Evitar que los elementos se envuelvan a la siguiente línea */
 }
