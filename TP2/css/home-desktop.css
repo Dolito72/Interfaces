@@ -30,7 +30,7 @@ ol {
     font-size: 80%;
 }
 
-/*--------------------Header----------------------*/
+/*-------------------------------Header-----------------------------------------*/
 body {
     width: 1352px;
     background-color: var(--Color-primario-sombra, #383839);
@@ -124,6 +124,7 @@ section {
     top: 75px;
     left: 0;
     z-index: 500;
+    cursor: pointer;
 }
 
 .menu-usuario{
@@ -200,10 +201,6 @@ margin-top: 1%;
    
 }
 
-
-
-
-
 .btn-icono,
 .btn-icono img {
     margin-top: 1%;
@@ -222,7 +219,6 @@ margin-top: 1%;
 
 /*--------------------Carrusel----------------------*/
 .conteiner-carrusel-first {
-
     position: relative;
     overflow-y: hidden;
     z-index: 2;
@@ -232,7 +228,6 @@ margin-top: 1%;
 }
 
 .conteiner-carrusel {
-
     position: relative;
     overflow-y: hidden;
     z-index: 2;
@@ -243,7 +238,8 @@ margin-top: 1%;
 .conteiner-carrusel-first ul {
     padding: 0px 8px;
     margin-block-end: 0;
-    width: 100%;
+   /* width: 100%;*/
+  /*  height: 324px;*/
     white-space: nowrap;
     list-style: none;
     transform: translateZ(0);
@@ -272,14 +268,9 @@ margin-top: 1%;
     gap: 8px;
 }
 
-
-
 .overflow-scroll {
     overflow-x: scroll;
 }
-
-
-
 
 .game-card,
 .game-card-x4 {
@@ -289,7 +280,6 @@ margin-top: 1%;
     /* background: var(--main-darker, purple);*/
     border-radius: 27px;
     /*box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);*/
-
 }
 
 /*VEEEER*/
@@ -305,8 +295,66 @@ margin-top: 1%;
 .game-card-1x1 img {
     max-width: 296px;
     height: 176.38px;
-    border-radius: 27px;
+   
 }
+
+/* ---------Estilos para la tarjeta de juego -------*/
+.game-card {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agrega transiciones para la transformación, sombra y borde */
+}
+
+/* Establece un borde transparente inicial */
+.game-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+    border: 1px solid transparent; /* Borde transparente */
+}
+
+
+/* Estilos para el título del juego */
+.game-card h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: cornsilk;
+    margin: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+/* Animación al hacer hover */
+.game-card:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul eléctrico a la derecha */
+border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul eléctrico en la parte inferior */
+}
+
+.game-card:hover img {
+border: 1px solid transparent;
+}
+
+.game-card:hover h4 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
 
 
 

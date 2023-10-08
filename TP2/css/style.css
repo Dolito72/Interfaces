@@ -477,6 +477,7 @@ ol {
     top: 75px;
     left: 0;
     z-index: 500;
+    cursor: pointer;
 }
 
 .menu-usuario{
