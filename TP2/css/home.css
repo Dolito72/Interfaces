@@ -234,7 +234,7 @@ overflow-x: scroll;
 
 
 .game-card-x1 .etiqueta-pago, .game-card-x1 .etiqueta-comprado,
-.game-card-x1 .etiqueta-agregado {
+.game-card-x1 .etiqueta-agregado, .game-card-x1 .etiqueta-gratis {
 
     position: relative;
     
@@ -249,13 +249,22 @@ overflow-x: scroll;
   }
 
   .etiqueta-comprado .texto-etiqueta {
-    width: 60%;
-    background-color:var(--Color-primario-luz-2, #ECEDF5);
+    
+    background-color: var(--Color-secundario-luz-1, #8C76E7);
   }
 
-  .etiqueta-comprado .texto-etiqueta, .etiqueta-agregado .texto-etiqueta {
-    width: 60%;
-    
+  .etiqueta-agregado .texto-etiqueta {
+   
+    background-color:var(--Color-acento-luz-2, #F4FF86);
+  }
+
+  .etiqueta-gratis .texto-etiqueta {
+   
+    background-color:var(--Color-acento-luz-1, #B8C717);
+  }
+
+  .etiqueta-comprado .texto-etiqueta, .etiqueta-agregado .texto-etiqueta, .etiqueta-gratis .texto-etiqueta {
+    width: 60%; 
   }
 
   .carrito-etiqueta {
@@ -275,7 +284,8 @@ overflow-x: scroll;
     margin-left: auto;
     margin-top: auto;
     border-radius: 2px 2px 2px 2px;
-    background-color: var(--Color-secundario-luz-1, #8C76E7);
+   
+    background-color: var(--Color-primario-luz-2, #ECEDF5);
   }
   
   .carrito-etiqueta img {
