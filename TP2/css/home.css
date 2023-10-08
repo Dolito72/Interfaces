@@ -37,9 +37,11 @@ body {
 }
 header {
     background-color: var(--Color-secundario-sombra, #2B1489);
+    width: 390px;
   
 }
 main {
+  width: 390px;
     min-height: 100vh;
     scroll-behavior: smooth;
 }
@@ -327,6 +329,7 @@ li.game-card-1x1 {
 
 footer {
     display: block;
+    width: 390px;
 }
 
 .footer-container-mobile{
@@ -431,7 +434,19 @@ footer {
 }
 
 .terminos-foot-mobile{
-  width: 200px;
+  display: flex;
+  width: 100%;
+  background-color: var(--Color-secundario-sombra, #2B1489);
+  padding-top: 2%;
+  justify-content: center space-around;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.terminos-foot-mobile img {
+  width: 100%;
+  padding: 2%;
+
 }
 
 
