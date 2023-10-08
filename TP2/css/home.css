@@ -106,7 +106,7 @@ max-height: 35px;
     overflow-y: hidden;
     z-index: 2;
     height: 200px;
-  
+    
 
 }
 .conteiner-carrusel {
@@ -127,6 +127,8 @@ max-height: 35px;
     transform: translateZ(0);
     scroll-padding: 50px 50px 50px 50px; 
     margin: 0;
+    
+  
 }
 /*VER*/
 .conteiner-carrusel ul {
@@ -138,6 +140,7 @@ max-height: 35px;
     transform: translateZ(0);
     scroll-padding: 50px 50px 50px 50px; 
     margin: 0;
+    
 }
 
 
@@ -170,7 +173,9 @@ overflow-x: scroll;
     border-radius: 27px;
     /*box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);*/
 
-} /*VEEEER*/
+
+} 
+/*VEEEER*/
 .game-card-x4 {
     display: grid;
     height: 176.38px;
@@ -178,13 +183,17 @@ overflow-x: scroll;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 4px 4px;
+    
 }
 
 .game-card-1x1 img {
     max-width: 296px;
     height: 176.38px;
     border-radius: 27px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
+
 
 
 
@@ -210,12 +219,97 @@ overflow-x: scroll;
     margin-top: 0;
     width: 144px;
     height: auto;
+    
 }
+
+.etiqueta-pago {
+    display: flex;
+    height: 40px;
+    
+  }
+
+
+
+
+
+
+.game-card-x1 .etiqueta-pago, .game-card-x1 .etiqueta-comprado,
+.game-card-x1 .etiqueta-agregado {
+
+    position: relative;
+    
+    border-radius: 0px 0px calc(8px + 2px) calc(8px + 2px);
+    width: 144px;
+    max-height: 36px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+    text-align: center;
+    padding: 10px; /* Ajusta el espaciado según tus necesidades */
+    bottom: 36px;
+    
+  }
+
+  .etiqueta-comprado .texto-etiqueta {
+    width: 60%;
+    background-color:var(--Color-primario-luz-2, #ECEDF5);
+  }
+
+  .etiqueta-comprado .texto-etiqueta, .etiqueta-agregado .texto-etiqueta {
+    width: 60%;
+    
+  }
+
+  .carrito-etiqueta {
+    width: 15%;
+    justify-content: start;
+    align-items: center;
+    margin-top: auto;
+    
+  }
+  .texto-etiqueta {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 16px;
+    margin-left: auto;
+    margin-top: auto;
+    border-radius: 2px 2px 2px 2px;
+    background-color: var(--Color-secundario-luz-1, #8C76E7);
+  }
+  
+  .carrito-etiqueta img {
+    width: 95%;
+  }
+
+  
+  .texto-etiqueta p {
+    font-size: 70%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    
+    color: var(--Color-primario-sombra)
+    
+  }
+
+
+
+  
 
 li.game-card-1x1 {
     width: 144px;
     height: auto;
 }
+
+
+
+/*--------------Animacion-Cards------------------*/
+
+
 
 
 
@@ -330,128 +424,3 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
-/*
-
-
-@media only screen and (min-width:600px) {
-    .container-footer {
-        width: 1352px;
-        height: 363px;
-        flex-shrink: 0;
-        margin: 0;
-        margin-top: 5%;
-        display: flex;
-        flex-direction: row;
-        background: var(--Color-secundario-sombra, #2B1489);
-    }
-    
-    #redes-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 369px;
-        height: 363px;
-        flex-shrink: 0;
-        background: var(--Color-primario-luz-2, #ECEDF5);
-    }
-    
-    #logo-footer {
-        margin-top: 20%;
-        justify-content: center;
-        margin-left: 13%;
-        width: 249px;
-        height: 70px;
-        flex-shrink: 0;
-    }
-    
-    #letra-footer {
-        margin-bottom: 3%;
-    }
-    
-    #texto-redes-footer {
-        margin-top: 20%;
-        margin-right: 10%;
-        width: 310px;
-    
-        color: var(--Color-secundario-sombra, #2B1489);
-    
-    
-    }
-    
-    #iconos-redes-footer {
-        margin-left: 5%;
-        margin-top: 5%;
-        width: 228.949px;
-        height: 35px;
-        flex-shrink: 0;
-    }
-    
-    #soporte-ayuda-footer {
-        margin-top: 10%;
-        margin-left: 10%;
-        display: flex;
-        flex-direction: row;
-        width: 512px;
-        height: 228px;
-        flex-shrink: 0;
-        color: var(--Color-primario-luz-2);
-    }
-    
-    #centro-footer {
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    #soporte-footer {
-        display: inline-flex;
-        margin-right: 10%;
-        padding: 18px 0px 61px 7px;
-        flex-direction: column;
-        gap: 21px;
-    
-    
-    }
-    
-    #ayuda-footer {
-        display: inline-flex;
-        padding: 18px 0px 61px 7px;
-        flex-direction: column;
-    
-        gap: 21px;
-    }
-    
-    #terminos-footer {
-        display: flex;
-        flex-direction: row;
-        margin-left: 5%;
-        margin-top: 10%;
-        width: 507.651px;
-        height: 17.095px;
-        flex-shrink: 0;
-        color: var(--Color-primario-luz-2);
-    }
-    
-    #categorias-footer {
-        display: flex;
-        flex-direction: column;
-        width: 337px;
-        height: 363px;
-        flex-shrink: 0;
-    }
-    
-    #cat-footer {
-        margin-top: 20%;
-        text-align: right;
-        color: var(--Color-primario-luz-2);
-    }
-    
-    #iconos-cat-footer {
-        margin-top: 5%;
-        margin-left: 25%;
-    
-        width: 173px;
-        height: 224px;
-        flex-shrink: 0;
-    }
-}

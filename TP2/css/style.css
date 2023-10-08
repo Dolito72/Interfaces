@@ -95,7 +95,11 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
+
+@media only screen and (min-width:600px) {
+    
 
 /* ------------------------------Botones -------------------------------------*/
 
@@ -1506,4 +1510,5 @@ margin-left: 8%;
     flex-shrink: 0;
     margin-top: 35%;
     margin-left: 2%;
+}
 }
