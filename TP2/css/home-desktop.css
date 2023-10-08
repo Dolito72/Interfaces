@@ -306,6 +306,7 @@ margin-top: 1%;
     overflow: hidden;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agrega transiciones para la transformación, sombra y borde */
+    animation: agrandarse 5s linear infinite;
 }
 
 /* Establece un borde transparente inicial */
@@ -330,14 +331,20 @@ margin-top: 1%;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(100%);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+ 
+    letter-spacing: 0.32px;
 }
 
 /* Animación al hacer hover */
 .game-card:hover {
-    transform: scale(1.1); /* Escala al hacer hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
-border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul eléctrico a la derecha */
-border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul eléctrico en la parte inferior */
+transform: scale(1.1); /* Escala al hacer hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul a la derecha */
+border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul en la parte inferior */
 }
 
 .game-card:hover img {
@@ -349,8 +356,38 @@ border: 1px solid transparent;
     transform: translateY(0);
 }
 
+.game-card-x1{
+    overflow: hidden;
+transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
 
 
+.game-card-x1:hover{
+/*animation: agrandarse 5s linear infinite;*/
+/*transform: skew(30deg, -15deg);*/
+transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento en el hover */
+ opacity: 0.6;
+ border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul a la derecha */
+ border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul  en la parte inferior */
+
+
+}
+
+/*se agranda despacio y se achica*/
+@keyframes agrandarse {
+    0% {
+        background-position: 0 0;
+        transform: scale(1.04);
+    }
+    50% {
+        background-position: 200% 0;
+        transform: scale(1.1);
+    }
+    100%{
+        background-position: 0 0 ;
+        transform: scale(1.04);
+    }
+}   
 
 
 
