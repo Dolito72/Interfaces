@@ -335,11 +335,9 @@ margin-top: 1%;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
- 
     letter-spacing: 0.32px;
 }
-
-/* Animación al hacer hover */
+ /* Animación al hacer hover */
 .game-card:hover {
 transform: scale(1.1); /* Escala al hacer hover */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
@@ -358,7 +356,7 @@ border: 1px solid transparent;
 
 .game-card-x1{
     overflow: hidden;
-transition: transform 0.3s ease; /* Transición suave para la transformación */
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
 }
 
 
@@ -389,15 +387,9 @@ transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento 
     }
 }   
 
-
-
-
-
-
-
 .game-card-1x4 img {
     border-radius: calc(8px + 2px);
-    box-sizing: border-box;
+    box-sizing: border-gbox;
     display: block;
     contain: layout;
     position: relative;
