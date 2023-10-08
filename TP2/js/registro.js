@@ -42,8 +42,8 @@ function mostrarConfetis() {
 mostrarConfetiBtn.addEventListener("click", function() {
   mostrarConfetis();
 
-  // Después de 5 segundos, redirigir a la página de "Loading"
+  // Después de 3 segundos, redirigir a la página de "Loguing"
   setTimeout(function() {
-      window.location.href = "loguin.html"; // Cambia a la URL de tu página de loading
+      window.location.href = "loguin.html"; // se redirige a loguin
   }, 3000); // Duración de la animación de confeti (en milisegundos)
 });
