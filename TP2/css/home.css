@@ -329,14 +329,14 @@ footer {
     display: block;
 }
 
-.footer-container{
+.footer-container-mobile{
     padding: 20px 0;
     color: var(--Color-primario-luz-2, #ECEDF5);
     background: var(--Color-primario-sombra, #383839);
     scroll-behavior: smooth;
 }
 
-.content-container {
+.content-container-mobile {
     padding: 0 16px;
 }
 
@@ -406,11 +406,18 @@ footer {
 
 .item-footer {
     width: 100%;
-    height: 33.33%;
+    height: 50%;
     padding: 0;
     margin: 0;
+    margin-top: 1%;
     padding-bottom: 5%;
 }
+
+.categ-mobile{
+  margin-left: 8%;
+
+}
+
 
 .item-footer h2 {
     padding-bottom: 2%;
@@ -420,10 +427,12 @@ footer {
 }
 
 .item-footer img {
-   width: 30%;
+   width: 60%;
 }
 
-
+.terminos-foot-mobile{
+  width: 200px;
+}
 
 
 
