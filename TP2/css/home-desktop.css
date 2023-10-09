@@ -23,18 +23,24 @@ ul,
 ol {
     list-style: none;
 }
-
+.category-title {
+    
+    padding: 2%;
+    padding-left: 1%;
+    width: 600px;
+}
 .category-title h2 {
     color: var(--Color-primario-luz-2, #ECEDF5);
-    font-weight: 80%;
-    font-size: 80%;
+    
 }
 
 /*-------------------------------Header-----------------------------------------*/
 body {
     width: 1352px;
     background-color: var(--Color-primario-sombra, #383839);
-    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+   /* overflow-y: scroll;*/
 }
 
 header {
@@ -45,6 +51,9 @@ header {
 main {
     min-height: 100vh;
     scroll-behavior: smooth;
+    width: 1352px;
+    padding:0;
+    
 }
 
 section {
@@ -222,7 +231,8 @@ margin-top: 1%;
     position: relative;
     overflow-y: hidden;
     z-index: 2;
-    height: 200px;
+    width: 1352px;
+    height: 324px;
 
 
 }
@@ -231,25 +241,32 @@ margin-top: 1%;
     position: relative;
     overflow-y: hidden;
     z-index: 2;
-    height: 95px;
+    width: 1352px;
+    height: 150px;
 
 }
 
 .conteiner-carrusel-first ul {
+    display: flex;
     padding: 0px 8px;
     margin-block-end: 0;
    /* width: 100%;*/
-  /*  height: 324px;*/
+   /* height: 322px;*/
     white-space: nowrap;
     list-style: none;
     transform: translateZ(0);
     scroll-padding: 50px 50px 50px 50px;
     margin: 0;
+    max-height: 324px;
+}
+
+.conteiner-carrusel-first ul li {
+    height: 100%; /* Ajusta esto según tus necesidades */
 }
 
 /*VER*/
 .conteiner-carrusel ul {
-    padding: 0px 2px;
+    
     margin-block-end: 0;
     width: 100%;
     white-space: nowrap;
@@ -262,64 +279,96 @@ margin-top: 1%;
 
 
 .category-cards-container {
-    padding: 8px;
+    padding: 0px 0px 0px 5px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    height: auto;
+}
+
+.category-cards-container-first {
+    
+    
+    width: 1352px;
+    /*height: 375px;*/
+    padding: 0px 0px 0px 5px;
+    
 }
 
 .overflow-scroll {
     overflow-x: scroll;
+    scrollbar-width: none;
 }
+
+.conteiner-carrusel-first ul, .conteiner-carrusel ul {
+    overflow-x: scroll;
+}
+
+.conteiner-carrusel-first ul::-webkit-scrollbar, .conteiner-carrusel ul::-webkit-scrollbar {
+    display: none;
+  }
 
 .game-card,
 .game-card-x4 {
     position: relative;
-    max-width: 296px;
-    height: 176.38px;
-    /* background: var(--main-darker, purple);*/
+    max-width: 596px;
+    height: 322px;
+    
     border-radius: 27px;
-    /*box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.25);*/
+    
 }
 
 /*VEEEER*/
 .game-card-x4 {
     display: grid;
-    height: 176.38px;
-    max-width: 296px;
+    max-width: 596px;
+    height: 322px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 4px 4px;
+    grid-gap: 20px 20px;
+}
+
+.game-card-1x1 {
+  display: flex;
+    max-width: 596px;
+    height: 322px;
+    
 }
 
 .game-card-1x1 img {
-    max-width: 296px;
-    height: 176.38px;
+    display: flex;
+    width: 596px;
+    height: 322px;
+    border-radius: 27px;
    
 }
 
+.game-card-1x1, .game-card-1x4, .game-card-x1 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
 /* ---------Estilos para la tarjeta de juego -------*/
-.game-card {
+/*.game-card {
     position: relative;
     display: inline-block;
     margin: 0 10px;
     overflow: hidden;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agrega transiciones para la transformación, sombra y borde */
-    animation: agrandarse 5s linear infinite;
-}
+    border-radius: 20px;*/
+    /*--transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Agrega transiciones para la transformación, sombra y borde */
+    /*animation: agrandarse 5s linear infinite;*/
+/*}*/
 
 /* Establece un borde transparente inicial */
-.game-card img {
+/*.game-card img {
     width: 100%;
     height: auto;
     transition: opacity 0.3s ease;
-    border: 1px solid transparent; /* Borde transparente */
-}
+    border: 1px solid transparent; /* Borde transparente *//*
+}*/
 
 
 /* Estilos para el título del juego */
-.game-card h4 {
+.game-card-1x1 h4, .game-card-1x4 h4, .game-card-x1 h4 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -338,24 +387,28 @@ margin-top: 1%;
     letter-spacing: 0.32px;
 }
  /* Animación al hacer hover */
-.game-card:hover {
+ .game-card-1x1:hover,  .game-card-1x4:hover, .game-card-x1:hover {
 transform: scale(1.1); /* Escala al hacer hover */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
 border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul a la derecha */
 border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul en la parte inferior */
 }
 
-.game-card:hover img {
+.game-card-1x1:hover img,  .game-card-1x4:hover img, .game-card-x1:hover img {
 border: 1px solid transparent;
 }
 
-.game-card:hover h4 {
+.game-card-1x1:hover h4, .game-card-1x4:hover h4, .game-card-x1:hover h4{
     opacity: 1;
     transform: translateY(0);
 }
 
+
+
 .game-card-x1{
-    overflow: hidden;
+    width:288px;
+    height: 151px;
+   
     transition: transform 0.3s ease; /* Transición suave para la transformación */
 }
 
@@ -368,8 +421,96 @@ transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento 
  border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul a la derecha */
  border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul  en la parte inferior */
 
-
 }
+
+.etiqueta-pago {
+    display: flex;
+    height: 55px;
+    
+  }
+
+.game-card-x1 .etiqueta-pago, .game-card-x1 .etiqueta-comprado,
+.game-card-x1 .etiqueta-agregado, .game-card-x1 .etiqueta-gratis {
+
+    position: relative; 
+    border-radius: 0px 0px calc(8px + 2px) calc(8px + 2px);
+    width: 288px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+    text-align: center;
+    padding: 10px; /* Ajusta el espaciado según tus necesidades */
+    bottom: 55px;
+    
+  }
+
+  .etiqueta-comprado .texto-etiqueta {
+    
+    background-color: var(--Color-secundario-luz-1, #8C76E7);
+  }
+
+  .etiqueta-agregado .texto-etiqueta {
+   
+    background-color:var(--Color-acento-luz-2, #F4FF86);
+  }
+
+  .etiqueta-gratis .texto-etiqueta {
+   
+    background-color:var(--Color-acento-luz-1, #B8C717);
+  }
+
+  .etiqueta-comprado .texto-etiqueta, .etiqueta-agregado .texto-etiqueta, .etiqueta-gratis .texto-etiqueta {
+    width: 60%; 
+  }
+
+  .carrito-etiqueta {
+    display:flex;
+    width: 25%;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+    margin-top: auto;
+    
+  }
+  .texto-etiqueta {
+    display: flex;
+    /*width: 80%;*/
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 27px;
+    margin-left: auto;
+    margin-top: auto;
+    border-radius: 2px 2px 2px 2px;
+   
+    background-color: var(--Color-primario-luz-2, #ECEDF5);
+  }
+  
+  .carrito-etiqueta img {
+    display: flex;
+   max-width: 35px;
+   max-height: 35px;
+   align-items: center;
+   justify-content: center;
+   
+  }
+
+  
+  .texto-etiqueta p {
+    /*font-size: 70%;*/
+    width: 100%;
+   
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    
+    padding: 6px 8px;
+    
+    color: var(--Color-primario-sombra)
+    
+  }
+
+
 
 /*se agranda despacio y se achica*/
 @keyframes agrandarse {
@@ -395,8 +536,8 @@ transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento 
     position: relative;
     margin-left: 0;
     margin-top: 0;
-    width: 144px;
-    height: 100%;
+    width:288px;
+    height: 151px;
 }
 
 .game-card-x1 img {
@@ -407,14 +548,14 @@ transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento 
     position: relative;
     margin-left: 0;
     margin-top: 0;
-    width: 144px;
-    height: auto;
+    width:288px;
+    height: 151px;
 }
 
-li.game-card-1x1 {
+/*li.game-card-1x1 {
     width: 144px;
     height: auto;
-}
+}*/
 
 
 

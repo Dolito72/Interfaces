@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(interval);
             setTimeout(() => {
                 // Redirigir a la página de inicio después de 1 segundo (5000 ms en total)
-                window.location.href = "index.html";
+                window.location.href = "home.html";
             }, 1000);
         }
     }, 50);
