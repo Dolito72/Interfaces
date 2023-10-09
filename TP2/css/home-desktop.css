@@ -575,7 +575,7 @@ border: 1px solid transparent;
 footer {
     display: block;
     position: relative;
-    height: 900px;
+    /*height: 900px;*/
 }
 
 .footer-left {
@@ -583,17 +583,279 @@ footer {
     background-color: var(--Color-primario-luz-2, #ECEDF5);
 }
 
-
-
 .logo-footer {
     align-items: center;
     width: 50%;
 }
 
+/*----------------Mobile----------------------*/
+
+@media only screen and (max-width:600px) {
+
+/*--------------------General----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+ul,
+ol {
+list-style: none;
+}
+  
+.category-title h2 {
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    font-weight: 95%;
+    font-size: 95%;
+}
+
+/*--------------------Header----------------------*/
+body {
+    background-color: var(--Color-primario-sombra, #383839);
+    overflow-y: scroll;
+}
+header {
+    background-color: var(--Color-secundario-sombra, #2B1489);
+    width: 390px;
+  
+}
+main {
+  width: 390px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+  }
+  .gap-8 {
+    gap: 8px;
+  }
+  .gap-16 {
+    gap: 16px;
+  }
+  .gap-24 {
+    gap: 24px;
+  }
+
+.container {
+    padding: 0 8px;
+}
+
+.container> * {
+    margin: 0 auto;
+  }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+.header-container .flex {
+display: flex;
+padding: 16px 0;
+align-items: center;
+justify-content: space-between;
+}
+
+.header-container .logo-img {
+width: 202px;
+height: 45px;
+margin-left: -10%;
+}
+
+.btn-icono {
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+    
+  }
+
+.btn-icono,
+.btn-icono img {
+max-width: 35px;
+max-height: 35px;
+}
+
+#hamb {
+    margin-right: 16px;
+}
+
+#carrito-perfil {
+    width: auto;
+}
+
+
+ 
+#carrito-perfil #carrito {
+
+display: none;
+}
+
+#sesion {
+  /* justify-content: center;*/
+    margin-left: -100%;
+}
 
 
 
 
+footer {
+    display: block;
+    width: 390px;
+    
+}
+
+.footer-container-mobile{
+    padding: 20px 0;
+    color: var(--Color-primario-luz-2, #ECEDF5);
+    background: var(--Color-primario-sombra, #383839);
+    scroll-behavior: smooth;
+}
+
+.content-container-mobile {
+    padding: 0 16px;
+}
+
+.footer-top {
+    display: block;
+    background-color: var(--Color-primario-luz-2, #ECEDF5);
+    justify-content: space-around;
+    height: 200px;
+}
+
+.logo-footer, .redes-footer{
+    display: flex;
+    width: 100%;
+}
+.logo-footer {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-primario-luz-2, #ECEDF5);
+}
+.logo-footer a img {
+    width: 90%;
+    
+}
+.centro-footer, -categorias-footer {
+    background-color: var(--Color-secundario-sombra, #2B1489);
+}
+
+.redes-footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding:0;
+    margin-top: 5%;
+}
+
+.texto-redes-footer {
+    width: 100%;
+    height: 50%;
+    font-size: 90%;
+    color: var(--Color-secundario-sombra, #2B1489);
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.icones-redes-footer {
+    width: 100%;
+    margin: 0;
+    padding:0;
+    margin-top: 15%;
+    padding-top: 15%;
+    
+}
+
+.iconos-redes-footer a img {
+   margin: 0;
+   padding: 0;
+}
+
+.soporte-ayuda-categorias-footer {
+    display: flex;
+    background-color: var(--Color-secundario-sombra, #2B1489);
+    padding-top: 2%;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+.ayuda-soporte {
+    display: block;
+}
+
+.item-footer {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+.categ-mobile{
+  margin-left: 8%;
+
+}
+
+
+.item-footer h2 {
+    padding-bottom: 2%;
+}
+.item-footer h2, .item-footer p {
+    font-size: 90%;
+}
+
+.item-footer img {
+   width: 60%;
+}
+
+.terminos-foot-mobile{
+  display: flex;
+  width: 100%;
+  background-color: var(--Color-secundario-sombra, #2B1489);
+  padding-top: 2%;
+  justify-content: center space-around;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.terminos-foot-mobile img {
+  width: 100%;
+  padding: 2%;
+
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+#terminos-footer {
+    display: none;
+}
+
+
+
+}
 
 
 /*
