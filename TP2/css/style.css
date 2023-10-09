@@ -1296,12 +1296,13 @@ body {
 
 .img-redes-comp{
     cursor: pointer;
+    width: 50px;
     margin-top: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
     border-radius: 30%;
     text-align:justify;
-    padding: 2%;
+    padding: 1%;
     transition: transform 0.3s ease  box-shadow 0.3s ease  ; 
 }
 
