@@ -224,12 +224,16 @@ overflow-x: scroll;
     
 }
 
-
 .etiqueta-pago {
     display: flex;
     height: 40px;
     
   }
+
+
+
+
+
 
 .game-card-x1 .etiqueta-pago, .game-card-x1 .etiqueta-comprado,
 .game-card-x1 .etiqueta-agregado, .game-card-x1 .etiqueta-gratis {

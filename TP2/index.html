@@ -1,387 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <title>Home</title>
+    <title>Loguin</title>
 </head>
+
 <body>
+    <div class="container-loguin ">
 
+        <header class="container-logo">
 
-<header>
-    <div class="container">
-        <div class="header-container">
-            <div class="flex">   
-                <button class="btn-icono"><img src=".//images/home/Boton-Hamburguesa.png" alt="Boton Hamburguesa" ></button> 
+            <img class="logo" src="./images/logo-corona.png" alt="logo">
+            <img class="letras-logo" src="./images/Mil-juegos.png" alt="letras-logo">
+        </header>
+
+        <section class="form-loguin">
+            <h2 class=titulo-loguin>Iniciar sesión</h2>
+            <button id="btn-google">
+                <div id="interior-btn-google"><a href="index.html" target="_blank" rel=""></a>
+                    <img id="icono-google" src="./images/Icono-google.png" alt="icono-google">
+                    <a href="loading.html" id="letra-google" rel="noopener noreferrer">Continuar con Google</a>
+
+                </div>
+            </button>
+
+            <button id="btn-facebook">
+                <div id="interior-btn-face">
+                    <img id="icono-face" src="./images/icono-facebook.png" alt="icono-google">
+                    <a href="loading.html" id="letra-face" rel="noopener noreferrer">Continuar con Facebook</a>
+
+                </div>
+            </button>
+            <img class="linea" src="./images/Linea.png" alt="linea">
+
+            <h2 class=titulo-loguin>Con tu usuario y contraseña</h2>
+            <div class="loguearse">
+                <label class="letra-loguin">Email *</label>
+                <input class="log" type="email" placeholder="Email" required>
+                <label class="letra-loguin">Contraseña *</label>
+                <input class="log" type="contraseña" placeholder="Contraseña" required>
+                
+                <button id="btn-loguin" class=" btn-grande btn-grande-activado  ">
+                    <a href="loading.html" class="btn-log letra-btn-grande letra-btn-grande-activado" rel="">Iniciar
+                        sesión</a>
+                </button>
+
+                    <!-- --------------------confetis------------ -->
+
+                <div id="contenedorConfeti">
+                  
+                </div>
+
             </div>
+            <img class="linea" src="./images/Linea.png" alt="linea">
+            <h2 class=titulo-loguin>Aún no tenés cuenta?</h2>
 
-            <div class="flex">
-             <img class="logo-img" href="index.html" src=".//images/home/Logo.png" alt="Logo">
-            </div>
+            <button
+                class=" btn-grande  btn-grande-activado btn-loguearse   letra-btn-grande  letra-btn-grande-activado">
+                <a id="pag-reg" href="registro.html" class="btn-log letra-btn-grande letra-btn-grande-activado"
+                    rel="">Registrate</a>
 
-            <div class="flex">  
-                    <button class="carrito"></button>      
-                    <button class="btn-icono"><img src=".//images/home/Avatar.png" alt="Sesion" ></button>      
+            </button>
+        </section>
+
+        <footer class="div-footer">
+            <div id="redes-footer">
+                <div id="logo-footer">
+                    <img src="./images/logo-corona.png" alt="logo">
+                    <img id="letra-footer" src="./images/Mil-juegos.png" alt="letras-logo">
+
+                    <h2 id="texto-redes-footer">Seguinos en nuestras redes</h2>
+                    <div id="iconos-redes-footer">
+                        <img src="./images/Iconos-redes.png" alt="iconos-redes">
+                    </div>
+                </div>
             </div>
-        </div>
+            <div id="centro-footer">
+                <div id="soporte-ayuda-footer">
+                    <div id="soporte-footer">
+                        <h2>Soporte</h2>
+                        <p class="body-bold">Tel: 0810 222 7723</p>
+                        <p class="body-bold">Mail: soporte@miljuegos.com</p>
+                    </div>
+                    <div id="ayuda-footer">
+                        <h2>Ayuda</h2>
+                        <p class="body-bold">FAQ</p>
+                        <p class="body-bold">Tutoriales</p>
+                        <p class="body-bold">Acerca de nosotros</p>
+
+                    </div>
+                </div>
+                <div id="terminos-footer">
+                    <img src="./images/terminos.png" alt="terminos">
+                </div>
+            </div>
+            <div id="categorias-footer">
+                <h2 id="cat-footer">Categorías de juegos</h2>
+                <img id="iconos-cat-footer" src="./images/categorias.png" alt="iconos-categorias">
+
+
+            </div>
+        </footer>
     </div>
-</header>
-
-<main class="container">
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Recomendados para vos GRATIS</h2></div>
-            <div class="conteiner-carrusel-first">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card">          
-                        <a class="game-card-1x1"><img src=".//images/home/Juegos/Recomendados/4-En-Linea.jpg" alt="4-En-Linea" width="296px"></a>
-                        <h4>4 En Linea</h4>
-                    </li>
-                    <li class="game-card">
-                        <div class="game-card-x4">
-                            <a class="game-card-1x4" href="#"><img src=".//images/home/Juegos/Recomendados/Crazy-Roll-3D.png" alt="Crazy-Roll-3D"></a>
-                            <a class="game-card-1x4"><img src=".//images/home/Juegos/Recomendados/Treasure-Hunter.png" alt="Treasure-Hunter"></a>
-                            <a class="game-card-1x4"><img src=".//images/home/Juegos/Recomendados/Lexy.png" alt="Lexy"></a>
-                            <a class="game-card-1x4"><img src=".//images/home/Juegos/Recomendados/90-15.png" alt="90-15"></a>
-                        </div>
-                    </li>
-                    <li class="game-card">
-                        <a class="game-card-1x1"><img src=".//images/home/Juegos/Recomendados/Words-Of-Wonders.png" alt="Words-Of-Wonders"></a>
-                    </li>
-                    <li class="game-card">
-                        <div class="game-card-x4">
-                            <a class="game-card-1x4" href="#"><img src=".//images/home/Juegos/Recomendados/Catcher-On-The-Farm.png" alt="Catcher-On-The-Farm"></a>
-                            <a class="game-card-1x4" href="#"><img src=".//images/home/Juegos/Recomendados/Cookie-Hangman.png" alt="Cookie-Hangman"></a>
-                            <a class="game-card-1x4" href="#"><img src=".//images/home/Juegos/Recomendados/Raft-Life.png" alt="Raft-Life"></a>
-                            <a class="game-card-1x4" href="#"><img src=".//images/home/Juegos/Recomendados/Shell-Shockers.png" alt="Shell-Shockers"></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    </section>
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Mis Juegos Favoritos</h2></div>
-            <div class="conteiner-carrusel">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card-x1">
-                        <a><img src=".//images/home/Juegos/Mis favoritos/The Evil Clown.png"  alt="The Evil Clown">  </a>   
-                        <div class="etiqueta-comprado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">COMPRADO</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a><img src=".//images/home/Juegos/Mis favoritos/Drama.png" alt="Drama"></a>
-                        <div class="etiqueta-agregado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">AGREGADO</p></div>     
-                        </div></li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/The Magic Door.png" alt="The Magic Door"></a>
-                        <div class="etiqueta-comprado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">COMPRADO</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/The Bos.png" alt="The Bos"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/The White Room.png" alt="The White Room"></a>
-                        <div class="etiqueta-comprado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">COMPRADO</p></div>     
-                        </div>               
-                    </li>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/Cat Lovescapes.png" alt="Cat Lovescapes"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/Spiderdoll.png" alt="Spiderdoll"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Mis favoritos/The Pillar.png" alt="The Pillar"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    </section>   
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Juegos de Deportes</h2></div>
-            <div class="conteiner-carrusel">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Soccer-Legend.png" alt="Soccer-Legend"></a>
-                            <div class="etiqueta-pago"> 
-                                <div class="carrito-etiqueta"><img src=".//images/home/Carrito-Home.png"></div>
-                                <div class="texto-etiqueta"><p class="body-bold">$1250,00</p></div>     
-                            </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Soccer-Heads.png" alt="Soccer-Heads"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Pill-Soccer.png" alt="Pill-Soccer"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Goalkeeper-Wiz.png" alt="Goalkeeper-Wiz"></a>
-                        <div class="etiqueta-agregado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">AGREGADO</p></div>     
-                        </div></li>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Kopanito.png" alt="Kopanito"></a>
-                        <div class="etiqueta-pago"> 
-                            <div class="carrito-etiqueta"><img src=".//images/home/Carrito-Home.png"></div>
-                            <div class="texto-etiqueta"><p class="body-bold">$1250,00</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Football-2023.png" alt="Football-2023"></a>
-                        <div class="etiqueta-pago"> 
-                            <div class="carrito-etiqueta"><img src=".//images/home/Carrito-Home.png"></div>
-                            <div class="texto-etiqueta"><p class="body-bold">$1250,00</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Football-3-D.png" alt="Football-3-D"></a>
-                        <div class="etiqueta-comprado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">COMPRADO</p></div>     
-                        </div>  
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Deportes/Penalty-Shooters.png" alt="Penalty-Shooters"></a>
-                        <div class="etiqueta-agregado"> 
-                            <div class="texto-etiqueta"><p class="body-bold">AGREGADO</p></div>     
-                        </div></li>
-                    </li>       
-                </ul>
-            </div>
-    </section>  
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Juegos de Carreras</h2></div>
-            <div class="conteiner-carrusel">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Cards-One.png" alt="Cards-One"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Crazy-For-Speed.png" alt="Crazy-For-Speed"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Crazy-Mx.png" alt="Crazy-Mx"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Death-Chase.png" alt="Death-Chase"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Higway-Racer.png" alt="Higway-Racer"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-    
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Moto-X3M.png" alt="Moto-X3M"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Sky-Riders.png" alt="Sky-Riders"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Carrera/Super-Star-Car.png" alt="Super-Star-Car"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    </section> 
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Juegos de Puzzle</h2></div>
-            <div class="conteiner-carrusel">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Blocks-Fill.png" alt="Blocks-Fill"></a>
-                        <div class="etiqueta-pago"> 
-                            <div class="carrito-etiqueta"><img src=".//images/home/Carrito-Home.png"></div>
-                            <div class="texto-etiqueta"><p class="body-bold">$1250,00</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Farm-Merge-Valley.png" alt="Farm-Merge-Valley"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Ludo-King.png" alt="Ludo-King"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Merge-Same-Number.png" alt="Merge-Same-Number"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/One-Connect.png" alt="One-Connect"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Race-To-Finish.png" alt="Race-To-Finish"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Tower-swap.png" alt="Tower-swap"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Puzzle/Tres-en-Raya.png" alt="Tres-en-Raya"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    </section> 
-    <section class="category-cards-container">
-        <div class="category-title"><h2>Juegos de Acción</h2></div>
-            <div class="conteiner-carrusel">
-                <ul class="flex row gap-24 overflow-scroll">
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/1-Vs-1-Battle.png" alt="1-Vs-1-Battle"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Getaway-Shootout.png" alt="Getaway-Shootout"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/House-Of-Hazards.png" alt="House-Of-Hazards"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Ninja-Hands.png" alt="Ninja-Hands"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Only-Up-3D.png" alt="Only-Up-3D"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Profesor-Strange.png" alt="Profesor-Strange"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Shell-Shockers.png" alt="Shell-Shockers"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                    <li class="game-card-x1">
-                        <a class="game-card-x1"><img src=".//images/home/Juegos/Accion/Skibidi-Toiltets.png" alt="Skibidi-Toiltetsgit add"></a>
-                        <div class="etiqueta-gratis"> 
-                            <div class="texto-etiqueta"><p class="body-bold">GRATIS</p></div>     
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    </section>   
-</main>
-
-<footer class="footer-container-mobile">
-    <div class="content-container-mobile">
-
-        <div class="footer-top">
-            <div class="logo-footer">
-                <a href="#top"><img src=".//images/home/Logo.png" alt="Logo"></a>
-            </div>
-            <div class="redes-footer">      
-                <h2 class="texto-redes-footer">Seguinos en nuestras redes</h2>
-                <a class="iconos-redes-footer"><img src=".//images/Iconos-redes.png" alt="iconos-redes" width="50%"></a>
-            </div>
-        </div>
-
-    
-        <div class="soporte-ayuda-categorias-footer">
-            <div class="ayuda-soporte">
-            <div class="item-footer">
-                <h2>Soporte</h2>
-                <p>Tel: 0810 222 7723</p>
-                <p>Mail: soporte@miljuegos.com</p>
-            </div>
-            <div class="item-footer">
-                <h2>Ayuda</h2>
-                <p>FAQ</p>
-                <p>Tutoriales</p>
-                <p>Acerca de nosotros</p>
-
-            </div>
-            </div>
-            <div class="item-footer categ-mobile">
-                <h2>Categorías de juegos</h2>
-                <img  class="img-cat-foot" src=".//images/categorias.png" alt="iconos-categorias">
-    
-            </div>
-        </div>
-        <div  class="terminos-foot-mobile"    id="terminos-footer">
-                <img src=".//images/terminos.png" alt="terminos">
-            </div>
-    </div>
-</footer>  
 </body>
+<script src="./js/loguin.js"></script>
+
 </html>
