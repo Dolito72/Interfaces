@@ -369,22 +369,27 @@ margin-top: 1%;
 
 /* Estilos para el título del juego */
 .game-card-1x1 h4, .game-card-1x4 h4, .game-card-x1 h4 {
+    display: flex;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: cornsilk;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--Color-primario-luz-2, #ECEDF5);
     margin: 0;
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(100%);
     font-family: Lato;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.32px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
  /* Animación al hacer hover */
  .game-card-1x1:hover,  .game-card-1x4:hover, .game-card-x1:hover {
@@ -416,7 +421,7 @@ border: 1px solid transparent;
 .game-card-x1:hover{
 /*animation: agrandarse 5s linear infinite;*/
 /*transform: skew(30deg, -15deg);*/
-transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento en el hover */
+/*transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento en el hover */
  opacity: 0.6;
  border-right: 5px solid var(--Color-secundario-sombra); /* Borde azul a la derecha */
  border-bottom: 5px solid var(--Color-secundario-sombra); /* Borde azul  en la parte inferior */
@@ -469,6 +474,7 @@ transform: scale(1.05) translateX(5px) ; /* Efecto suave de escala y movimiento 
     justify-content: start;
     align-items: center;
     margin-top: auto;
+    cursor: pointer;
     
   }
   .texto-etiqueta {
