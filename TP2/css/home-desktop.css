@@ -289,8 +289,6 @@ margin-top: 1%;
 }
 
 .category-cards-container-first {
-    
-    
     width: 1352px;
     /*height: 375px;*/
     padding: 0px 0px 0px 5px;
@@ -315,7 +313,6 @@ margin-top: 1%;
     position: relative;
     max-width: 596px;
     height: 322px;
-    
     border-radius: 27px;
     
 }
@@ -331,7 +328,7 @@ margin-top: 1%;
 }
 
 .game-card-1x1 {
-  display: flex;
+    display: flex;
     max-width: 596px;
     height: 322px;
     
@@ -384,7 +381,6 @@ margin-top: 1%;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: translateY(100%);
-  
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
@@ -413,13 +409,10 @@ border: 1px solid transparent;
     transform: translateY(0);
 }
 
-
-
 .game-card-x1{
     width:288px;
     height: 151px;
-   
-    transition: transform 0.3s ease; /* Transición suave para la transformación */
+   transition: transform 0.3s ease; /* Transición suave para la transformación */
 }
 
 
@@ -454,13 +447,11 @@ border: 1px solid transparent;
   }
 
   .etiqueta-comprado .texto-etiqueta {
-    
     background-color: var(--Color-secundario-luz-1, #8C76E7);
   }
 
   .etiqueta-agregado .texto-etiqueta {
-   
-    background-color:var(--Color-acento-luz-2, #F4FF86);
+    background-color: #ec2a64;
   }
 
   .etiqueta-gratis .texto-etiqueta {
@@ -509,14 +500,11 @@ border: 1px solid transparent;
   .texto-etiqueta p {
     /*font-size: 70%;*/
     width: 100%;
-   
     margin: 0;
     right: 0;
     bottom: 0;
     align-items: center;
-    
     padding: 6px 8px;
-    
     color: var(--Color-primario-sombra)
     
   }
@@ -563,10 +551,7 @@ border: 1px solid transparent;
     height: 151px;
 }
 
-/*li.game-card-1x1 {
-    width: 144px;
-    height: auto;
-}*/
+
 
 
 
@@ -589,11 +574,6 @@ footer {
     align-items: center;
     width: 50%;
 }
-
-
-
-
-
 
 
 /*

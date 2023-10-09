@@ -393,11 +393,12 @@ footer {
 }
 
 .soporte-ayuda-categorias-footer {
-    display: flex;
+    display: block;
     background-color: var(--Color-secundario-sombra, #2B1489);
     padding-top: 2%;
     justify-content: space-around;
-    padding-left: 2%;
+    padding-left: 5%;
+  
 }
 .ayuda-soporte {
     display: block;
@@ -411,23 +412,22 @@ footer {
     margin-top: 1%;
     padding-bottom: 5%;
 }
-
 .categ-mobile{
-  margin-left: 8%;
-
+  margin-bottom: 1%;
 }
-
-
 .item-footer h2 {
     padding-bottom: 2%;
 }
 .item-footer h2, .item-footer p {
     font-size: 90%;
+    
 }
 
 .item-footer img {
-   width: 60%;
+   width: 40%;
+   margin-right: 5%;
 }
+
 
 .terminos-foot-mobile{
   display: flex;
