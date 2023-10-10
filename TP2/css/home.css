@@ -517,7 +517,7 @@ height: 151px;
 
 /*-------------------------------------------------------MOBILE--------------------------------------------------------*/
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:391px) {
 
 /*-------------------------------------------------------GENERAL--------------------------------------------------------*/
 
@@ -553,6 +553,7 @@ font-size: 95%;
 body {
 background-color: var(--Color-primario-sombra, #383839);
 overflow-y: scroll;
+height: auto;
 }
 header {
 background-color: var(--Color-secundario-sombra, #2B1489);
@@ -641,14 +642,10 @@ margin-left: -100%;
 
 /*-------------------------------------------------------CARRUSEL--------------------------------------------------------*/
 
-.category-cards-container, .category-cards-container-first .conteiner-carrusel-first, .conteiner-carrusel { 
-width: 390px;
+section, .category-cards-container, .category-cards-container-first .conteiner-carrusel-first, .conteiner-carrusel { 
+width: 375px;
 
 }
-
-
-
-
 
 /*-------------------------------------------------------FOOTER--------------------------------------------------------*/
 .div-footer {
