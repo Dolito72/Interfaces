@@ -39,7 +39,7 @@ margin-bottom: 1%;
 
 /*-------------------------------------------------------HEADER--------------------------------------------------------*/
 body {
-width: 1352px;
+/*width: 1352px;*/
 background-color: var(--Color-primario-sombra, #383839);
 scrollbar-width: none;
 -ms-overflow-style: none;
@@ -54,13 +54,13 @@ background-color: var(--Color-secundario-sombra, #2B1489);
 main {
 min-height: 100vh;
 scroll-behavior: smooth;
-width: 1352px;
+/*width: 1352px;*/
 padding:0;
 
 }
 
 section {
-width: 1337px;
+/*width: 1337px;*/
 }
 
 .flex {
@@ -234,7 +234,7 @@ height: auto;
 position: relative;
 overflow-y: hidden;
 z-index: 2;
-width: 1337px;
+/*width: 1337px;*/
 height: 324px;
 
 
@@ -244,7 +244,7 @@ height: 324px;
 position: relative;
 overflow-y: hidden;
 z-index: 2;
-width: 1337px;
+/*width: 1337px;*/
 height: 150px;
 
 }
@@ -287,7 +287,7 @@ height: auto;
 }
 
 .category-cards-container-first {   
-width: 1352px;
+/*width: 1352px;*/
 padding: 0px 0px 0px 5px;   
 }
 
