@@ -168,11 +168,11 @@ h3 {
     margin: 0;
     /*width: 100%; 
     /*height:100vh;*/
-    width: 1352px;
+   /* width: 1352px;*/
     height: 100%;
     justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    /*align-items: center;*/
+    /*display: inline-flex;*/
     flex-shrink: 0;
     background-image: url('../images/fondo-loguin.png');
     background-size: cover;
@@ -189,7 +189,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    /*width: 250px;*/
     height: 70px;
     flex-shrink: 0;
 
@@ -429,6 +429,11 @@ ol {
 .container>* {
     margin: 0 auto;
 }
+
+header {
+    background-color: var(--Color-secundario-sombra, #2B1489);
+    
+    }
 
 header {
     background-color: var(--Color-secundario-sombra, #2B1489);
@@ -723,11 +728,11 @@ border-radius: 60%;
     margin: 0;
     /*width: 100%; 
      /*height:100vh;*/
-    width: 1352px;
-    height: 1800px;
+    /*width: 1352px;*/
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    /*align-items: center;*/
+    /*display: inline-flex;*/
     flex-shrink: 0;
     background-image: url('../images/fondo-loguin.png');
     background-size: cover;
@@ -736,20 +741,42 @@ border-radius: 60%;
 
 }
 
+.container-logo-registro {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*width: 250px;*/
+    height: 70px;
+    flex-shrink: 0;
+
+}
+
+
+
 #container-header-registro {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+   
     margin-top: 5%;
 
 }
 
 #progreso {
+    padding: 0%;
+    margin: 0%;
     margin-bottom: 10%;
+   margin-left: 43%;
+    width: 250px;
 }
 
 .registro {
     display: flex;
     flex-direction: column;
+    margin-left: 35%;
     width: 530px;
     height: 1200px;
     flex-shrink: 0;
@@ -1192,7 +1219,7 @@ figure {
 }
 /*
 #menu-juego {
-    width: 1352px;
+   /* width: 1352px;*/
     height: 56px;
     flex-shrink: 0;
 
@@ -1408,7 +1435,7 @@ figure {
 
 #container-comentarios {
     display: flex;
-    width: 1352px;
+    /*width: 1352px;*/
     padding-top: 20px;
     justify-content: center;
     align-items: flex-start;
@@ -1579,7 +1606,7 @@ margin-left: 8%;
 
 
 #footer-juego {
-    width: 1353px;
+    /*width: 1353px;*/
     height: 363px;
     flex-shrink: 0;
     margin-top: 35%;
