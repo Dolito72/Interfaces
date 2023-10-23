@@ -26,7 +26,7 @@ list-style: none;
 .category-title {
 padding: 10px;
 
-width: 600px;
+width: 100%;
 
 }
 .category-title h2 {
@@ -58,9 +58,9 @@ scroll-behavior: smooth;
 padding:0;
 
 }
-
-/*section {
-width: 1337px;
+/*
+section {
+width: 100%;
 }*/
 
 .flex {
@@ -95,7 +95,6 @@ margin: 0 auto;
 display: flex;
 justify-content: space-between;
 padding: 0 16px;
-
 }
 
 .header-container .flex {
@@ -116,11 +115,6 @@ background: rgba(0, 0, 0, 0);
 padding: 0;
 margin: 0;
 }
-
-
-
-
-
 .menu-hamb{
 display: none;
 background: var(--Color-primario-luz-2, #ECEDF5);
@@ -186,12 +180,13 @@ margin-top: 1%;
 width: 140px;
 justify-content: space-between;
 }
-/*
+
 .carrito {
 width: 55px;
 height: 60px;
+
 border-radius: 60%;
-}*/
+}
 
 .menu-carrito{
 display: none;
@@ -219,10 +214,10 @@ margin-right: 8%;
 }
 
 .btn-icono,
-.btn-icono img, .carrito, .carrito img {
+.btn-icono img {
 margin-top: 1%;
-width: 55px;
-height: 55px;
+width: 60px;
+height: 60 px;
 
 }
 
@@ -235,11 +230,22 @@ height: auto;
 }
 
 /*-------------------------------------------------------CARRUSEL--------------------------------------------------------*/
+
+.animacion {
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+
+
+
 .conteiner-carrusel-first {
 position: relative;
 overflow-y: hidden;
 z-index: 2;
 /*width: 1337px;*/
+
 height: 324px;
 
 
@@ -251,6 +257,7 @@ overflow-y: hidden;
 z-index: 2;
 /*width: 1337px;*/
 height: 150px;
+
 
 }
 
@@ -522,7 +529,7 @@ height: 151px;
 
 /*-------------------------------------------------------MOBILE--------------------------------------------------------*/
 
-@media only screen and (max-width:391px) {
+@media only screen and (max-width:600px) {
 
 /*-------------------------------------------------------GENERAL--------------------------------------------------------*/
 
@@ -559,6 +566,10 @@ body {
 background-color: var(--Color-primario-sombra, #383839);
 overflow-y: scroll;
 height: auto;
+overflow-x: hidden;
+width: 100%;
+margin: 0;
+
 }
 header {
 background-color: var(--Color-secundario-sombra, #2B1489);
@@ -613,7 +624,8 @@ justify-content: space-between;
 .header-container .logo-img {
 width: 202px;
 height: 45px;
-margin-left: -10%;
+/*margin-left: -10%;*/
+
 }
 
 .btn-icono {
@@ -631,7 +643,13 @@ max-height: 35px;
 
 #hamb {
 margin-right: 16px;
+
 }
+#hamb img{
+    background-color: transparent;
+    border-radius: 60px;
+}
+
 
 #carrito-perfil {
 width: auto;
@@ -640,10 +658,10 @@ width: auto;
 #carrito-perfil #carrito {
 display: none;
 }
-
+/*
 #sesion {
 margin-left: -100%;
-}
+}*/
 
 /*-------------------------------------------------------CARRUSEL--------------------------------------------------------*/
 
