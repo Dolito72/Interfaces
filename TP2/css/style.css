@@ -168,11 +168,11 @@ h3 {
     margin: 0;
     /*width: 100%; 
     /*height:100vh;*/
-    width: 1352px;
+   /* width: 1352px;*/
     height: 100%;
     justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    /*align-items: center;*/
+    /*display: inline-flex;*/
     flex-shrink: 0;
     background-image: url('../images/fondo-loguin.png');
     background-size: cover;
@@ -182,6 +182,8 @@ h3 {
 }
 
 
+
+
 .container-logo {
     margin: auto;
     padding: 5%;
@@ -189,7 +191,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    /*width: 250px;*/
     height: 70px;
     flex-shrink: 0;
 
@@ -433,7 +435,7 @@ ol {
 .header-container {
     display: flex;
     background-color: var(--Color-secundario-sombra, #2B1489);
-    width: 1340px;
+    /*width: 1340px;*/
     justify-content: space-between;
     padding: 0 16px;
   
@@ -563,7 +565,13 @@ cursor: pointer;
     margin-top: 1%;
     width: 60px;
     height: 60 px;
+    background-color: transparent;
 
+}
+
+#hamb img{
+    background-color: transparent;
+    border-radius: 60px;
 }
 
 
@@ -575,7 +583,7 @@ cursor: pointer;
 }
 /*-------------------------------------------Footer--------------------------------------*/
 .div-footer {
-    width: 1352px;
+    /*width: 1352px;*/
     height: 363px;
     flex-shrink: 0;
     margin: 0;
@@ -589,7 +597,7 @@ cursor: pointer;
     display: flex;
     flex-direction: row;
     /*justify-content: center;*/
-    width: 369px;
+    width: 25%; /*369px;*/
     height: 363px;
     flex-shrink: 0;
     background: var(--Color-primario-luz-2, #ECEDF5);
@@ -637,7 +645,11 @@ cursor: pointer;
 #centro-footer {
     display: flex;
     flex-direction: column;
-
+    /*nuevo*/
+    justify-content: center;
+    margin-top: -5%;
+    align-items: center;
+    width: 50%;
 }
 
 #soporte-footer {
@@ -661,20 +673,34 @@ cursor: pointer;
 #terminos-footer {
     display: flex;
     flex-direction: row;
+    /*nuevo*/
+    justify-content: center;
+    align-items: center;
     margin-left: 5%;
     margin-top: 10%;
-    width: 507.651px;
-    height: 17.095px;
+    width:auto; /* 507.651px;*/
+    height: auto; /*17.095px;*/
     flex-shrink: 0;
     color: var(--Color-primario-luz-2);
+}
+/*nuevo*/
+#terminos-footer img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #categorias-footer {
     display: flex;
     flex-direction: column;
-    width: 337px;
+    width: 20%; /* 337px;*/
     height: 363px;
     flex-shrink: 0;
+    /*nuevo*/
+    align-items: end; 
+    justify-content: center;
+    margin-top: -2.5%;
 }
 
 #cat-footer {
@@ -702,11 +728,11 @@ cursor: pointer;
     margin: 0;
     /*width: 100%; 
      /*height:100vh;*/
-    width: 1352px;
-    height: 1800px;
+    /*width: 1352px;*/
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    /*align-items: center;*/
+    /*display: inline-flex;*/
     flex-shrink: 0;
     background-image: url('../images/fondo-loguin.png');
     background-size: cover;
@@ -715,20 +741,42 @@ cursor: pointer;
 
 }
 
-#container-header-registro {
+.container-logo-registro {
+    margin: auto;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    margin-top: 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*width: 250px;*/
+    height: 70px;
+    flex-shrink: 0;
 
 }
 
+
+
+#container-header-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin-top: 10%;
+    height: 80px;
+}
+
 #progreso {
+    padding: 0%;
+    margin: 0%;
     margin-bottom: 10%;
+   margin-left: 43%;
+    width: 250px;
 }
 
 .registro {
     display: flex;
     flex-direction: column;
+    margin-left: 35%;
     width: 530px;
     height: 1200px;
     flex-shrink: 0;
@@ -1011,35 +1059,22 @@ body {
 }
 
 /*---------------------------------Página 4 en Línea-------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    }
-    
-    *,
-    *:before,
-    *:after {
-    box-sizing: border-box;
-    }
-
-
-#body-juego {
+#body-juego {  /*contiene al header tambien*/
     display: flex;
     flex-direction: column;
     /* me posiciono en el centro*/
     margin: 0;
     /*width: 100%; 
      /*height:100vh;*/
-    width: 1352px;
+    /*width: 1352px;*/
     height: 1800px;
-    display: inline-flex;
+    /*display: inline-flex;*/ /*la saco, me rompe todo*/
     flex-shrink: 0;
     background-color: var(--Color-primario-luz-2);
 }
 
 #menu {
-    width: 1440px;
+    /*width: 1352px;*/
     height: 85px;
     flex-shrink: 0;
     background-color: #2B1489;
@@ -1070,7 +1105,7 @@ body {
 }
 
 #container-juego {
-    width: 1400px;
+    /*width: 1351px;*/
     height: 1180px;
     display: flex;
     flex-direction: column;
@@ -1162,7 +1197,7 @@ body {
 }
 
 #menu-juego {
-    width: 1352px;
+   /* width: 1352px;*/
     height: 56px;
     flex-shrink: 0;
 
@@ -1213,7 +1248,7 @@ body {
 }
 
 #videos-juego {
-    width: 1351px;
+    /*width: 1351px;*/
     height: 466px;
     display: flex;
     flex-direction: row;
@@ -1378,7 +1413,7 @@ body {
 
 #container-comentarios {
     display: flex;
-    width: 1352px;
+    /*width: 1352px;*/
     padding-top: 20px;
     justify-content: center;
     align-items: flex-start;
@@ -1549,7 +1584,7 @@ margin-left: 8%;
 
 
 #footer-juego {
-    width: 1353px;
+    /*width: 1353px;*/
     height: 363px;
     flex-shrink: 0;
     margin-top: 35%;
