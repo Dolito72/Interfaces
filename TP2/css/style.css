@@ -1011,6 +1011,19 @@ body {
 }
 
 /*---------------------------------Página 4 en Línea-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+    
+    *,
+    *:before,
+    *:after {
+    box-sizing: border-box;
+    }
+
+
 #body-juego {
     display: flex;
     flex-direction: column;
@@ -1026,7 +1039,7 @@ body {
 }
 
 #menu {
-    width: 1352px;
+    width: 1440px;
     height: 85px;
     flex-shrink: 0;
     background-color: #2B1489;
@@ -1057,7 +1070,7 @@ body {
 }
 
 #container-juego {
-    width: 1351px;
+    width: 1400px;
     height: 1180px;
     display: flex;
     flex-direction: column;
