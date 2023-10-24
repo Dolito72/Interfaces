@@ -37,6 +37,7 @@ carrusel.addEventListener('mouseout', () => {
     start();
 })
 
+start();
 
 
 
