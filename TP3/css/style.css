@@ -1110,7 +1110,7 @@ body {
     flex-direction: column;
 }
 
-.container-juego-2 {
+container-juego-2 {
     display: flex;
     flex-direction: row;
 }

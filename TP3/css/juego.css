@@ -212,10 +212,18 @@ body{
     font-weight: 900;
     font-size: 130%;
 }
-.conteiner-tablero{
+/*.conteiner-tablero{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}*/
+
+
+.canvas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 17%;
 }
 .timer{
     padding-left: 20%;
@@ -247,15 +255,5 @@ body{
     margin-top: 2px;
 }
 
-.canvas {
-    margin-left: 1%;
-    margin-bottom: 0px;
-}
+   
 
-.board-settings{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 50%;
-    flex-direction: column;
-}
