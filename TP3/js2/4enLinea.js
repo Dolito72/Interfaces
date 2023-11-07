@@ -352,7 +352,8 @@ function showMsgInGameBox(msg, time) {
 
 //muestra el mensaje, y cambia el estilo de su contenedor, por un tiempo dado.
 function showMsgInModalBox(msg, time) {
-    GAME_MODAL.innerHTML = msg;
+    //GAME_MODAL.innerHTML = msg;
+    MSG_BOX.innerHTML= msg;
     setTimeout(() => {
        GAME_MODAL.classList.add("container-inactivo");
        GAME_MODAL.classList.remove("game-modal");

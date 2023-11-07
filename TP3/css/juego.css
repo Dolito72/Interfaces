@@ -62,6 +62,11 @@ body{
     font-weight: 800;
     line-height: normal;
     font-family: 'Lato', sans-serif;
+    
+}
+
+.timer {
+    background-color: var(Color-primario-luz-2, #ECEDF5);
 }
 
 .titulo{
@@ -237,9 +242,10 @@ body{
 
 .game-controlers{
     position: absolute;
-    top: 0;
-    right: 28%;
+    top: 12%;
+    right: 25%;
     padding: 10px;
+    background-color:#ECEDF5;
 }
 .juego-ejecutado{
     position: relative;
