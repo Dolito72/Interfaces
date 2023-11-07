@@ -177,3 +177,38 @@ body{
     display: flex;
     margin-left: 14.8%;
 }
+
+.input-mode{
+    margin: 2%;
+    padding: 5%;
+    border-radius: 9px;
+    width: 75%;
+    background-color: #816ca0;
+    color: #0c0e27;
+    font-weight: 700;
+}
+
+.destacado{
+    background-color:#490485;
+    color: #C0C6FA;
+}
+
+
+.board-settings input:hover{
+    background-color: #1b0e2e;
+    color: #C0C6FA;
+}
+
+.container-activo{
+    display: block;
+}
+
+.container-inactivo{
+    display: none;
+}
+  
+.danger {
+    color: rgb(156, 20, 20);
+    font-weight: 900;
+    font-size: 130%;
+}
