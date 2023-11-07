@@ -224,15 +224,20 @@ body{
     justify-content: center;
     flex-direction: column;
     margin-left: 17%;
+    z-index: 1;
 }
 .timer{
     padding-left: 20%;
 }
 
+.imagen-fondo-juego img {
+    z-index: -1;
+}
+
 .game-controlers{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 28%;
     padding: 10px;
 }
 .juego-ejecutado{
@@ -246,6 +251,7 @@ body{
 .game-modal, .game-msg-div{ 
     display: flex;
     justify-content: center;
+    margin-left: -7%;
 }
 
 .game-modal p, .game-msg-div p{       
@@ -255,5 +261,12 @@ body{
     margin-top: 2px;
 }
 
+
+.imagen-fondo-juego{
+    background-image: url("../images/4EnLinea.png");
+    opacity: 0.4;
+    background-size: cover;
+    z-index: -1;
+}
    
 

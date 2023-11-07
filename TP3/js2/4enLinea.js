@@ -135,6 +135,9 @@ document.querySelector("#btn-juego").addEventListener("click", renderizarJuego);
 
 //guarda contenedores del dom, que luego se muestran o oculatan
 
+let conteinerSettings = document.querySelector('#game-settings');
+let conteinerBotonJugar = document.querySelector('#btn-juego');
+
 let conteinerCanvas = document.querySelector("#game-box");
 let conteinerInicial = document.querySelector("#container-juego-2");
 
@@ -152,6 +155,10 @@ function renderizarJuego(){
         play();
         conteinerInicial.classList.add("container-inactivo");
         conteinerInicial.classList.remove("container-activo");
+       /* conteinerSettings.classList.add("container-inactivo");
+        conteinerBotonJugar.classList.add("container-inactivo");
+        conteinerSettings.classList.remove("container-activo");
+        conteinerBotonJugar.classList.remove("container-activo");*/
         conteinerCanvas.classList.add("container-activo");
         conteinerCanvas.classList.remove("container-inactivo");
     }
