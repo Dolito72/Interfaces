@@ -223,8 +223,9 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 17%;
+    margin-left: 14.8%;
     z-index: 1;
+    background-image: url('/images/4EnLinea.png');
 }
 .timer{
     padding-left: 20%;

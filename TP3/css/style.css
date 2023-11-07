@@ -1157,9 +1157,9 @@ container-juego-2 {
 
     #game-settings{
         width: 350px;
-        height: 380px;
+        /*height: 380px;*/
         position: absolute;
-        top: 40%;
+        top: 30%;
     /* left: 35%;*/
         left: 20%;
         font-style: normal;
