@@ -85,125 +85,111 @@
         <p class="body-bold"><span><a id="home" href="home.html">Home</a> </span><span> <img id="vector-bread"
                     src="./images/bread.png" alt="bread"></span><span id="bread">4 en Línea</span></p>
     </div>
-    
-    
-    
+
+
+
     <!-----------------------------container juego--------------------------->
     <section id="container-juego">
-        <div id="container-juego-2" >
+        <div id="container-juego-2" class="container-juego-2">
 
-            <div id="game-settings" style="display: block;"> 
+            <div id="game-settings">
                 <form action="" id="game-settings-form">
-                    
+
                     <section class="board-settings">
                         <h2>Elige el tablero</h2>
                         <div>
-                            <input type="radio" name="board-lines" value="friendly" id="radio-friendly" checked>
-                            <label for="radio-friendly">4 en linea</label>
+                            <input type="button" name="board-lines" value="CuatroEnLinea" class="input-mode" checked>
+
                         </div>
                         <div>
-                            <input type="radio" name="board-lines" value="brave" id="radio-brave">
-                            <label for="radio-brave">5 en linea</label>
+                            <input type="button" name="board-lines" value="CincoEnLinea" class="input-mode">
+
                         </div>
                         <div>
-                            <input type="radio" name="board-lines" value="clever" id="radio-clever">
-                            <label for="radio-clever">6 en linea</label>
+                            <input type="button" name="board-lines" value="SeisEnLinea" class="input-mode">
+
                         </div>
                         <div>
-                            <input type="radio" name="board-lines" value="ambicious" id="radio-ambicious">
-                            <label for="radio-ambicious">7 en linea</label>
+                            <input type="button" name="board-lines" value="SieteEnLinea" class="input-mode">
+
                         </div>
                     </section>
                     <section class="piece-settings">
                         <h2>Selecciona la ficha </h2>
                         <div>
-                            <div ><h3 id="nameP1">Jugador 1 </h3></div>
+                            <div>
+                                <h3 id="nameP1">Jugador 1 </h3>
+                            </div>
                             <div id="player-1-piece-btns">
                                 <button src="./images/fichas/Pato1.png"
                                     style="background: url('./images/fichas/Pato1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                    value="p1"></button>
-                                <button  src="./images/fichas/Pato2.png"
+                                    value="Pato1"></button>
+                                <button src="./images/fichas/Pato2.png"
                                     style="background: url('./images/fichas/Pato2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                    value="p2"></button>
-                                <button  src="./images/fichas/Pato3.png"
+                                    value="Pato2"></button>
+                                <button src="./images/fichas/Pato3.png"
                                     style="background: url('./images/fichas/Pato3.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                    value="p3"></button>
-                                <button  src="./images/fichas/Pato4.png"
+                                    value="Pato3"></button>
+                                <button src="./images/fichas/Pato4.png"
                                     style="background: url('./images/fichas/Pato4.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                    value="p4"></button>
+                                    value="Pato4"></button>
                             </div>
                         </div>
                         <div>
-                            <div><h3  id="nameP2" >
-                                Jugador 2</h3> </div>
+                            <div>
+                                <h3 id="nameP2">
+                                    Jugador 2</h3>
+                            </div>
                             <div id="player-2-piece-btns">
-                                <button  src="./images/fichas/Milei1.png"
-                                style="background: url('./images/fichas/Milei1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                value="p1"></button>
-                            <button  src="./images/fichas/Milei2.png"
-                                style="background: url('./images/fichas/Milei2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                value="p2"></button>
-                            <button  src="./images/fichas/Milei3.png"
-                                style="background: url('./images/fichas/Milei3.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                value="p3"></button>
-                            <button  src="./images/fichas/Milei4.png"
-                                style="background: url('./images/fichas/Milei4.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
-                                value="p4"></button></div>
+                                <button src="./images/fichas/Milei1.png"
+                                    style="background: url('./images/fichas/Milei1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="Milei1"></button>
+                                <button src="./images/fichas/Milei2.png"
+                                    style="background: url('./images/fichas/Milei2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="Milei2"></button>
+                                <button src="./images/fichas/Milei3.png"
+                                    style="background: url('./images/fichas/Milei3.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="Milei3"></button>
+                                <button src="./images/fichas/Milei4.png"
+                                    style="background: url('./images/fichas/Milei4.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="Milei4"></button>
+                            </div>
                         </div>
                     </section>
                 </form>
                 <div class="msg"></div>
             </div>
-            <figure id="img-juego" class="ocultar" style.display = 'block'>
-                
-                <img src="./images/4 en linea.png" alt="4 en linea">
+
+            <figure id="img-juego" class="ocultar">
+
+                <img src="./images/4EnLinea.png" alt="4 en linea">
                 <div class="settings-confirm">
                     <button id="btn-juego"
-                        class="btn-grande btn-grande-activado letra-btn-grande  letra-btn-grande-activado playSettingsBtn " id="play-settings-btn">Jugar
+                        class="btn-grande btn-grande-activado letra-btn-grande  letra-btn-grande-activado playSettingsBtn ">
+                        Jugar
                     </button>
                 </div>
             </figure>
         </div>
 
 
-  <!-----------------------------container 4 en linea EN EJECUCION----------------------------------------------------------->
-        <div id="container-juego-2 container-canvas"  style="display: none;" class=" ocultarCanvas">
-           <div class="row-header">
-                <div class="jug-opciones" id="J1">
-                    <h2>Jugador 1</h2>
+        <!-----------------------------container 4 en linea EN EJECUCION----------------------------------------------------------->
+        <div id="game-box" class="juego-ejecutado">
+            <!-- Game View -->
+            <div class="game-controlers">
+                <div id="timer-box" class="timer"></div>
+                <div id="restart-box">
+                    <button id="restart-btn"><span class="icon-reset">Reinicar</span></button>
                 </div>
-                <div id="row-center">
-                    <div class="row">
-                        <div class="col-md-12 header-page">
-                            <button id="start-game" class="btn-jugar"> Reiniciar</button>
-                            <div id="timer"> <span id="countdown"></span> </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="jug-opciones"   id="J2">
-                        <h2>Jugador 2</h2>
-                       <!-- <div id="btn-jug-2">
-                           
-                        </div>-->
-                    </div>
+            </div>
+            <div id="game-msg-div" class="game-msg-div"></div>
+            <div id="game-controls-btns"></div>
+            <div id="game-canvas">
+                <div id="board" class="conteiner-tablero">
+                    <canvas id="game-box-canvas" class="canvas" width="1080" height="677"></canvas>
+                    <div id="game-modal"></div>
                 </div>
 
-                
-                <!----------------------Cartel ganador------------------------------------------------------------>
-                <div class="row info">
-                    <div id="winner-info" class="alert winner-message alert-success hide offset-md-1 col-md-10">
-                    </div>
-                    <div id="draw-info" class=" alert winner-message alert-danger hide offset-md-1 col-md-10">
-                        Empatados!
-                    </div>
-                </div>
-
-
-            <div class="row tablero" >
-                <div class="col-md-8 offset-md-1 row">
-                    <canvas id="board" width="1080" height="550" ></canvas>
-                </div>
-                    
             </div>
 
         </div>
@@ -430,15 +416,17 @@
     <!--<script src="./js/script.js"></script>-->
     <script src="./js/menu.js"></script>
 
-    <script src="./js/juego/Board.js"></script>
+    <script src="./js2/4enLinea.js"></script>
 
-    <script src="./js/juego/SettingsJuego.js"></script>
-    <script src="./js/juego/FourInLine.js"></script>
-    <script src="./js/juego/Game.js"></script>
-    <script src="./js/juego/Player.js"></script>
-    <script src="./js/juego/Token.js"></script>
-    <script src="./js/juego/cargarTablero.js"></script>
-    
+    <script src="./js2/Figura.js"></script>
+    <script src="./js2/Ficha.js"></script>
+    <script src="./js2/Casillero.js"></script>
+    <script src="./js2/Flecha.js"></script>
+    <script src="./js2/Tablero.js"></script>
+    <script src="./js2/Timer.js"></script>
+
+
+
 </body>
 
 </html>
