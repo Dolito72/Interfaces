@@ -70,7 +70,7 @@ function selectPiece(selectedBtn, btnsContainer, player) {
     else player2 = selectedBtn.value;
     //Si coinciden, no deja ninguna selecionado y tira mensaje de error
     if(player1 == player2) {
-        showErrorMsg("Selecciona un oponente distinto.");
+        showErrorMsg("Selecciona una ficha distinta.");
         for (const btn of btnsContainer.children) {
             btn.classList.remove("piece-settings-btn-active");
         }
@@ -173,8 +173,12 @@ document.querySelector("#restart-btn").addEventListener("click", renderizarJuego
 
 //Chequea que se hayan elegido las fichas.
 function checkSettings() {
+    if(player1 == null && player2 == null) {
+        showErrorMsg("Selecciona una ficha");
+        return false;
+    } 
     if(player1 == null || player2 == null) {
-        showErrorMsg("Selecciona un oponente");
+        showErrorMsg("Selecciona otra ficha");
         return false;
     } 
     return true;   
