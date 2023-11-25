@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@400;700;900&family=Oswald&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@100&display=swap');
+
+
+/*---------------------------------página loading----------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #98b5df ;
+}
+
+
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 8px solid#e7b82b;
+  border-top: 8px solid #f0de17;
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+ 
+  /*border-image: linear-gradient(90deg, #f0de17 50%, transparent 50%) 1; /* Borde de dos colores */
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra para resaltar */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.progress-bar {
+  width: 0%;
+  height: 8px;
+  background-color: #f0de17;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.progress-text {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f0de17;
+  font-weight: 900;
+}
+
