@@ -24,10 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
       // transformaciones de translate para los 3
    
       negro.style.transform = `translateX(${moveX * -0.5}px) translateY(${moveY * -0.7}px) rotate(4deg)`;
-
+      // Movimiento de agrandar y achicar sutil para el "negro"
+      const scaleFactor = 1 + Math.abs(moveY / 100);
+      negro.style.transform += ` scale(${scaleFactor})`;
 
       //movimiento de la heroina
-      heroina.style.transform = `translateX(${moveX * -1}px) translateY(${moveY * -2.2}px) rotate(${moveY / 5}deg)`;
+      // Ajustar movimiento de la "heroina" hacia la izquierda
+      const heroinaMoveX = moveX * -2; // Ajusta según sea necesario
+      heroina.style.transform = `translateX(${heroinaMoveX}px) translateY(${moveY * -2.2}px) rotate(${moveY / 5}deg) scale(${1 - Math.abs(moveY / 100)})`;
+      
 
     
       // Movimiento del "hulk" con escala
