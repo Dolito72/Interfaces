@@ -16,7 +16,7 @@ const cargarElem = () => {
   });
 };
 
-// Llama a la función después de 1 segundo
+
 setTimeout(cargarElem, 500);
 
 
@@ -24,11 +24,11 @@ window.addEventListener("scroll", () =>{
   
 
   let scroll = window.scrollY;
-  //logo
+  //el logo se achica cuando se scrollea
   if(scroll > 20){
     logo.style.transform = `translateY(-25%)  translateX(-5%) scale(0.25) `;
     logo.style.position = `fixed`;
-    headerSticky();
+    headerSticky();// se hace sticky el header 
   }
    else {
     header.style.height = "227px";
