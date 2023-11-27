@@ -152,16 +152,19 @@ header .width-1080 button.btn-hambur{
 }
 /*----------------animacion menu hamburguesa-------------------------*/
 /* forwards mantiene el estado final de la animación */
-button.btn-hambur:hover div:first-child{
+
+.btn-hambur.clicked div:first-child {
     animation: animation-up .5s linear forwards; 
-    
 }
-button.btn-hambur:hover div:last-child{
-    /* transform: rotate(-45deg) translateY(4px) translateX(-6px); */
+
+.btn-hambur.clicked div:last-child {
     animation: animation-down .5s linear forwards;
 }
 
-
+.btn-hambur.clicked div:nth-child(2) {
+    filter: none;
+    opacity: 0;
+}
 
 @keyframes animation-up {
     0% {
@@ -196,23 +199,7 @@ button.btn-hambur:hover div:last-child{
 
 
 
-/*.btn-hambur:hover div:first-child{
-    filter:none; /* le saco la sombra
-    transform: rotate(45deg)  translate(2px, 4px)  ;
-  
-}*/
 
-.btn-hambur:hover div:nth-child(2){
-    filter: none;
-    opacity: 0;
-   
-}
-/*
-.btn-hambur:hover div:last-child{
-    filter: none;
-    transform: rotate(-45deg) translate(-10px, 4px)  ;
-   
-}*/
 
 /*--------------------------*/
 
