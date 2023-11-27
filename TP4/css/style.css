@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@400;700;900&family=Oswald&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@100&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,26 +14,30 @@ body {
     overflow-x: hidden;
     background-color: black;
 }
+
 /* -----------------------------------------------------------Variables---------------------------------------------------------*/
-*:root{
+*:root {
     --font: 'Lato';
     --amarillo: #FFE901;
     --negro: #000;
     --gris: rgba(0, 0, 0, 0.39);
     --blanco: #FFF;
     --gris-oscuro: #5E5E5D;
-    --azul-oscuro: #02187E; 
+    --azul-oscuro: #02187E;
     --celeste-oscuro: #2982FF;
     --background-header: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
     --background-section-8: linear-gradient(180deg, #F7E3D8 21.2%, #8FBEFC 81.48%);
 }
+
 /*-------------------------------------------------------Tipografias------------------------------------------------------------*/
 
-h1, h2, h3 .body {
+h1,
+h2,
+h3 .body {
     font: var(--font);
     color: var(--negro);
     font-style: normal;
-    line-height: 94.5%; 
+    line-height: 94.5%;
 }
 
 .tx-btn {
@@ -41,39 +45,39 @@ h1, h2, h3 .body {
     color: var(--azul-oscuro);
     font-weight: 900px;
     font-size: 20px;
-    line-height: 18.9px; 
+    line-height: 18.9px;
 }
 
-h1{
+h1 {
     font-size: 60px;
     font-weight: 600;
 }
 
-h2{
+h2 {
     font-size: 60px;
     color: var(--blanco);
     font-weight: 400;
     line-height: normal;
 }
 
-h3{
+h3 {
     font-size: 40px;
     font-weight: 400;
 }
 
-.body{
+.body {
     font-size: 20px;
     font-weight: 400;
 }
 
 
-.body-input{
+.body-input {
     color: var(--gris);
     letter-spacing: 2.2px;
 
 }
 
-.tx-btn{
+.tx-btn {
     color: var(--azul-oscuro);
     font-size: 20px;
     font-weight: 900;
@@ -82,12 +86,12 @@ h3{
 
 /*-------------------------------------------------------Botones----------------------------------------------------------------*/
 
-.btn{
+.btn {
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
 }
 
 .btn-comprar {
@@ -96,7 +100,7 @@ h3{
     border-radius: 111px;
     border: 8px solid var(--2982-ff, var(--celeste-oscuro));
     background: var(--amarillo);
-    -webkit-text-stroke:2px;
+    -webkit-text-stroke: 2px;
     box-shadow: 4px 5px 0px 0px #02187E;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -111,7 +115,7 @@ h3{
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #cdd5e0;
-    background:  #f5f8ff; 
+    background: #f5f8ff;
 }
 
 
@@ -127,15 +131,15 @@ header {
 }
 
 
-header .width-1080{
+header .width-1080 {
     padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
-header .width-1080 button.btn-hambur{
+header .width-1080 button.btn-hambur {
     background: none;
     border: none;
     display: flex;
@@ -143,18 +147,20 @@ header .width-1080 button.btn-hambur{
     z-index: 1;
     gap: -2px;
 }
- header .width-1080 button.btn-hambur div{
+
+header .width-1080 button.btn-hambur div {
     width: 42px;
     height: 12px;
     filter: drop-shadow(4px 5px 0px #02187E);
     transition: all .5s;
     transform-origin: left;
 }
-/*----------------animacion menu hamburguesa-------------------------*/
+
+/*-----------------------------------------------Animacion menu hamburguesa---------------------------------*/
 /* forwards mantiene el estado final de la animación */
 
 .btn-hambur.clicked div:first-child {
-    animation: animation-up .5s linear forwards; 
+    animation: animation-up .5s linear forwards;
 }
 
 .btn-hambur.clicked div:last-child {
@@ -171,12 +177,14 @@ header .width-1080 button.btn-hambur{
         filter: drop-shadow(4px 5px 0px #02187E);
         transform: rotate(15deg) translate(0, 0);
     }
+
     50% {
-        filter:  drop-shadow(0px 0px 0px #02187E);
+        filter: drop-shadow(0px 0px 0px #02187E);
         transform: rotate(25deg) translate(1px, 2px);
     }
+
     100% {
-        filter:  drop-shadow(0px 0px 0px #02187E);
+        filter: drop-shadow(0px 0px 0px #02187E);
         transform: rotate(45deg) translate(2px, 4px);
     }
 }
@@ -186,12 +194,14 @@ header .width-1080 button.btn-hambur{
         filter: drop-shadow(4px 5px 0px #02187E);
         transform: rotate(-15deg) translate(-4, 1);
     }
+
     50% {
-        filter: drop-shadow(0px 0px 0px #02187E); 
+        filter: drop-shadow(0px 0px 0px #02187E);
         transform: rotate(-25deg) translate(-7px, 2px);
     }
+
     100% {
-        filter:  drop-shadow(0px 0px 0px #02187E);
+        filter: drop-shadow(0px 0px 0px #02187E);
         transform: rotate(-45deg) translate(-10px, 4px);
     }
 }
@@ -205,19 +215,20 @@ header .width-1080 button.btn-hambur{
 
 body.sticky-header header {
     background-color: var(--celeste-oscuro);
-    
-  }
+
+}
 
 
-header .width-1080 button.btn-comprar{
+header .width-1080 button.btn-comprar {
     width: 200px;
     height: 50px;
 }
 
-.width-1080{
+.width-1080 {
     width: 1080px;
     margin: auto;
 }
+
 /*---------------------------------------------------------------Seccion 1----------------------------------------------------*/
 .seccion1 {
     display: flex;
@@ -226,7 +237,7 @@ header .width-1080 button.btn-comprar{
     margin-top: -127px;
     width: 100%;
     height: 720px;
-    
+
 }
 
 .seccion1 .logo {
@@ -235,21 +246,23 @@ header .width-1080 button.btn-comprar{
     width: 590px;
     height: 301px;
     top: -30px;
-    
-    transition: ease .7s;  
+
+    transition: ease .7s;
 }
 
 .logo.invisible {
     top: -250px;
     opacity: 0;
-  }
-.seccion1 .cielo{
+}
+
+.seccion1 .cielo {
     position: absolute;
     bottom: 60px;
     z-index: 0;
     width: 100%;
 
 }
+
 .seccion1 .edificiosIzquierda {
     position: absolute;
     width: 32%;
@@ -259,10 +272,11 @@ header .width-1080 button.btn-comprar{
     z-index: 2;
     transition: left .4s linear;
 }
+
 .edificiosIzquierda.invisible {
     left: -100px;
     opacity: 0;
-  }
+}
 
 .seccion1 .edificiosCentro {
     position: absolute;
@@ -276,7 +290,7 @@ header .width-1080 button.btn-comprar{
 .edificiosCentro.invisible {
     bottom: -10px;
     opacity: 0;
-  }
+}
 
 .seccion1 .edificiosDerecha {
     position: absolute;
@@ -287,6 +301,7 @@ header .width-1080 button.btn-comprar{
     transition: right .4s linear;
     z-index: 2;
 }
+
 .edificiosDerecha.invisible {
     right: -100px;
     opacity: 0;
@@ -305,7 +320,7 @@ header .width-1080 button.btn-comprar{
 .spiderBlanco.invisible {
     left: -150px;
     opacity: 0;
-  }
+}
 
 .seccion1 .spiderRojo {
     position: absolute;
@@ -318,7 +333,7 @@ header .width-1080 button.btn-comprar{
 .spiderRojo.invisible {
     bottom: -350px;
     opacity: 0;
-  }
+}
 
 .seccion1 .spiderNegro {
     position: absolute;
@@ -327,10 +342,12 @@ header .width-1080 button.btn-comprar{
     z-index: 10;
     transition: .5s linear;
 }
+
 .spiderNegro.invisible {
     right: -350px;
     opacity: 0;
-  }
+}
+
 /*-------------------------------------------------------------Seccion 2-------------------------------------------------------*/
 
 .seccion2 {
@@ -338,31 +355,31 @@ header .width-1080 button.btn-comprar{
     position: relative;
     height: 924.5px;
     background-image: url(../img/seccion2/fondo.png);
-    background-size: 100% 90% ;
+    background-size: 100% 90%;
     background-repeat: no-repeat;
     z-index: 2;
     margin-top: -80px;
 }
 
-.seccion2 .width-1080{
+.seccion2 .width-1080 {
     position: relative;
 }
 
-.seccion2 .width-1080 h1, .seccion2 .width-1080 p{
+.seccion2 .width-1080 h1,
+.seccion2 .width-1080 p {
     position: absolute;
     color: var(--blanco);
     margin-top: 50px;
 }
 
-.seccion2 .width-1080 h1{
-
+.seccion2 .width-1080 h1 {
     width: 646px;
     height: 114px;
     top: 160px;
     left: 0;
 }
 
-.seccion2 .width-1080 p{
+.seccion2 .width-1080 p {
     width: 586px;
     height: 154px;
     top: 300px;
@@ -370,17 +387,17 @@ header .width-1080 button.btn-comprar{
     line-height: normal;
 }
 
-.container-img-seccion2{
+.container-img-seccion2 {
     position: relative;
 }
 
-.seccion2 .container-img-seccion2 .img-edificioVerde{
+.seccion2 .container-img-seccion2 .img-edificioVerde {
     position: absolute;
     left: 0;
     top: 520px;
 }
 
-.seccion2 .container-img-seccion2 .img-green-elf{
+.seccion2 .container-img-seccion2 .img-green-elf {
     position: absolute;
     right: -100px;
     top: 110px;
@@ -396,85 +413,89 @@ header .width-1080 button.btn-comprar{
     background-color: var(--blanco);
     width: 100%;
     height: 1085px;
-    margin-top: -210px; 
+    margin-top: -210px;
     z-index: 1;
 }
 
 .contenedor-seccion3 {
     margin-left: 100px;
     margin-right: 100px;
-    padding-top: 370px; 
+    padding-top: 370px;
     display: flex;
     justify-content: space-between;
 }
 
 .contenedor-seccion3 img {
-  width: 30%; 
-  max-height: auto; 
-    
+    width: 30%;
+    max-height: auto;
+
 }
 
 .contenedor-card {
-  flex: 1;
-  max-width: 30%;
+    flex: 1;
+    max-width: 30%;
 }
 
-.card{
+.card {
     opacity: 0;
     position: relative;
     bottom: -250px;
-  
+
 }
-.efecto-card1-remove{
+
+.efecto-card1-remove {
     opacity: 0;
     bottom: -250px;
     transition: .4s ease;
 }
-.efecto-card2-remove{
+
+.efecto-card2-remove {
     opacity: 0;
     bottom: -250px;
     transition: .8s ease;
 }
-.efecto-card3-remove{
+
+.efecto-card3-remove {
     opacity: 0;
     bottom: -250px;
     transition: 1.2s ease;
 }
 
 
-.efecto-card1{
+.efecto-card1 {
     opacity: 1;
-    bottom:  0; 
+    bottom: 0;
     transition: ease .4s;
 
 }
 
-.efecto-card2{
+.efecto-card2 {
     opacity: 1;
-    bottom:  0; 
+    bottom: 0;
     transition: ease .8s;
 }
 
-.efecto-card3{
+.efecto-card3 {
     opacity: 1;
-    bottom:  0; 
+    bottom: 0;
     transition: ease 1.2s;
 }
 
 
 .contenedor-card img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 
 .translate-element {
-    transition: transform 0.5s ease; 
-  }
-  
-  .translate-element.active {
-    transform: translate(0, 0); 
-  }
+    transition: transform 0.5s ease;
+}
+
+.translate-element.active {
+    transform: translate(0, 0);
+}
+
 /*--------------------------------------------------------------Seccion 4------------------------------------------------------*/
 .seccion4 {
     width: 100%;
@@ -485,11 +506,12 @@ header .width-1080 button.btn-comprar{
     background-repeat: no-repeat;
 
 }
-.seccion4 .width-1080{
+
+.seccion4 .width-1080 {
     position: relative;
 }
 
-.seccion4 .seccion4-card1{
+.seccion4 .seccion4-card1 {
     position: absolute;
     top: -155px;
     left: -45px;
@@ -498,20 +520,20 @@ header .width-1080 button.btn-comprar{
     flex-shrink: 0;
 }
 
-.seccion4 .seccion4-card2{
+.seccion4 .seccion4-card2 {
     position: absolute;
     left: -55px;
-    top:-20px;
+    top: -20px;
     width: 543.218px;
     height: 325.787px;
     flex-shrink: 0;
 }
 
-.seccion4 .seccion4-card3{
+.seccion4 .seccion4-card3 {
     position: absolute;
-    left:0;
+    left: 0;
     left: -25px;
-    top:175px;
+    top: 175px;
     width: 546.108px;
     height: 326.509px;
     flex-shrink: 0;
@@ -520,11 +542,13 @@ header .width-1080 button.btn-comprar{
 .contenedor-cards-3D {
     width: 500px;
     height: 800px;
-  
+
 }
+
 .contenedor-cards-3D img {
     margin-top: -20%;
 }
+
 .contenedor-cards-3D img:hover {
     transform: scale(1.1);
     transition: all .5s ease-in-out;
@@ -539,7 +563,7 @@ header .width-1080 button.btn-comprar{
     margin-bottom: -90px;
 }
 
-.seccion5 .width-1080 h1{
+.seccion5 .width-1080 h1 {
     width: 646px;
     color: var(--blanco);
     margin-top: -250px;
@@ -557,7 +581,7 @@ header .width-1080 button.btn-comprar{
 }
 
 .parallax5 .heroina {
-    left:100px;
+    left: 100px;
     top: -86px;
     transform: rotate(-5.483deg);
 }
@@ -565,7 +589,7 @@ header .width-1080 button.btn-comprar{
 .parallax5 .negro {
     width: 333px;
     left: 511px;
-    top: -118px; 
+    top: -118px;
     transform: rotate(4deg);
 }
 
@@ -576,7 +600,7 @@ header .width-1080 button.btn-comprar{
 
 /*------------------------------------------------------------ Seccion 6 ------------------------------------------------------*/
 .seccion6 {
-    height: 1600px; 
+    height: 1600px;
     width: 100%;
     background-image: url(../img/seccion6/fondo.png);
     background-repeat: no-repeat;
@@ -585,16 +609,19 @@ header .width-1080 button.btn-comprar{
     padding-top: 300px;
     z-index: -1;
 }
-.seccion6  h1{
-    
+
+.seccion6 h1 {
+
     padding-top: 100px;
     padding-left: 90px;
 }
+
 .seccion6 img {
     width: 552px;
     height: 302px;
 }
-.seccion6 .width-1080{
+
+.seccion6 .width-1080 {
     padding-top: 90px;
     margin: 0 auto;
 }
@@ -602,14 +629,15 @@ header .width-1080 button.btn-comprar{
 .grid-container {
     display: flex;
     justify-content: space-between;
-     
+
 }
 
-.seccion6 .seccion6-columnaImagenes{
+.seccion6 .seccion6-columnaImagenes {
     width: 552px;
     position: relative;
 }
-.seccion6 .seccion6-columnaTextos{
+
+.seccion6 .seccion6-columnaTextos {
     width: 475px;
     max-height: 300px;
     overflow-y: scroll;
@@ -618,7 +646,8 @@ header .width-1080 button.btn-comprar{
 
 
 .seccion6-columnaTextos::-webkit-scrollbar {
-    width: 0.5em; /*que no se vea el scroll*/
+    width: 0.5em;
+    /*que no se vea el scroll*/
 }
 
 .seccion6-columnaTextos::-webkit-scrollbar-thumb {
@@ -630,7 +659,8 @@ header .width-1080 button.btn-comprar{
 .seccion6 .seccion6-columnaImagenes {
     width: 552px;
     position: relative;
-    overflow: hidden; /* Asegura que las imágenes no se desborden del contenedor */
+    overflow: hidden;
+    /* Asegura que las imágenes no se desborden del contenedor */
 }
 
 .seccion6 .seccion6-columnaImagenes img {
@@ -642,7 +672,7 @@ header .width-1080 button.btn-comprar{
     height: auto;
     transition: opacity 1s ease-in-out;
 }
- 
+
 
 
 /*--------------------------------------------------------------- Comprar -----------------------------------------------------*/
@@ -652,7 +682,7 @@ header .width-1080 button.btn-comprar{
     height: 248px;
 }
 
-.seccionComprar h1{
+.seccionComprar h1 {
     color: var(--blanco);
 }
 
@@ -662,9 +692,10 @@ header .width-1080 button.btn-comprar{
 .seccion7 {
     padding-bottom: 40px;
     height: 720px;
-    background-image:  url(../img/seccion7/trapecioBlanco.png);
-    background-size: cover; /* Ajusta el tamaño de fondo */
-  
+    background-image: url(../img/seccion7/trapecioBlanco.png);
+    background-size: cover;
+    /* Ajusta el tamaño de fondo */
+
     position: relative;
 }
 
@@ -672,13 +703,13 @@ header .width-1080 button.btn-comprar{
     position: relative;
 }
 
-.seccion7 .width-1080 > img {
-   /* width: 350px;*/
- /*   height: auto;*/
+.seccion7 .width-1080>img {
+    /* width: 350px;*/
+    /*   height: auto;*/
     position: absolute;
-    top:180px;
+    top: 180px;
     cursor: pointer;
-   
+
 }
 
 .spider-white {
@@ -691,26 +722,26 @@ header .width-1080 button.btn-comprar{
     width: 500px;
     height: auto;
     left: 25%;
-  }
+}
 
 .spider-black {
     width: 400px;
     height: auto;
     left: 70%;
-   
+
 }
 
 
 /*------------------------------------------------------------ Seccion 8 ------------------------------------------------------*/
 
 .seccion8 {
-   
+
     height: 1296px;
-    background: linear-gradient(180deg,  #8FBEFC 21.2%, #F7E3D8  81.48%);
+    background: linear-gradient(180deg, #8FBEFC 21.2%, #F7E3D8 81.48%);
     position: relative;
 }
 
-.seccion8 .img-seccion8-building{
+.seccion8 .img-seccion8-edif {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -729,9 +760,14 @@ header .width-1080 button.btn-comprar{
 }
 
 @keyframes kick {
-    0% { background-position:0 }
-    100% { background-position:-270px }
-  }
+    0% {
+        background-position: 0
+    }
+
+    100% {
+        background-position: -270px
+    }
+}
 
 
 #spider-2 {
@@ -747,15 +783,20 @@ header .width-1080 button.btn-comprar{
 }
 
 @keyframes climb {
-    0% { background-position:0 }
-    100% { background-position:-490px }
-  }
+    0% {
+        background-position: 0
+    }
 
-  #spider-3 {
+    100% {
+        background-position: -490px
+    }
+}
+
+#spider-3 {
     position: absolute;
     transform: scale(1.5);
     bottom: 13%;
-    left: 45%;    
+    left: 45%;
     width: 46px;
     height: 84px;
     background-image: url(../img/spritesheet/spider_2.png);
@@ -764,12 +805,17 @@ header .width-1080 button.btn-comprar{
 }
 
 @keyframes walk {
-    0% { background-position:0 }
-    100% { background-position:-234px }
-  }
+    0% {
+        background-position: 0
+    }
+
+    100% {
+        background-position: -234px
+    }
+}
 
 
-.seccion8 .width-1080{
+.seccion8 .width-1080 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -777,20 +823,21 @@ header .width-1080 button.btn-comprar{
 
 }
 
-.seccion8 h1{
+.seccion8 h1 {
     width: 816px;
     text-align: center;
     margin-top: 152px;
 
 }
 
-.seccion8 input, .seccion8 button{
+.seccion8 input,
+.seccion8 button {
     margin-top: 45px;
     width: 562px;
     height: 100px;
 }
 
-.seccion8 .width-1080 p{
+.seccion8 .width-1080 p {
     width: 578px;
     height: 95px;
     margin-top: 40px;
@@ -798,34 +845,33 @@ header .width-1080 button.btn-comprar{
 
 }
 
-.seccion8 .width-1080 img{
+.seccion8 .width-1080 img {
     width: 231px;
     height: 145px;
     margin: 30px 0 0 -330px
-
 }
 
-.container-btn-setion8{
+.container-btn-setion8 {
     display: flex;
 }
 
-.container-btn-setion8 input{
+.container-btn-setion8 input {
     border-radius: 50px 0px 0px 50px;
     border-top: 9px solid var(--celeste-oscuro);
     border-bottom: 9px solid var(--celeste-oscuro);
     border-left: 9px solid var(--celeste-oscuro);
     background: #FFF;
-/* Drop Shadow */
-box-shadow: 4px 5px 0px 0px #02187E;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
 }
 
-.container-btn-setion8 input::placeholder{
+.container-btn-setion8 input::placeholder {
     color: var(--gris);
     letter-spacing: 2.2px;
     padding-left: 50px;
 }
 
-.container-btn-setion8 button{
+.container-btn-setion8 button {
     width: 218px;
     margin-left: -10px;
     border-radius: 0px 50px 50px 0px;
@@ -838,7 +884,7 @@ footer {
     background-color: var(--gris-oscuro);
 }
 
-footer .body  {
+footer .body {
     width: 820px;
     height: 361px;
     margin-top: 38px;
@@ -855,14 +901,13 @@ footer .body span {
     margin-top: 20px;
 }
 
-footer img{
+footer img {
     width: 100%;
     height: 80px;
 }
 
-footer .width-1080 img{
-   margin-top: 120px;
+footer .width-1080 img {
+    margin-top: 120px;
     width: 212px;
     height: 41px;
 }
-
