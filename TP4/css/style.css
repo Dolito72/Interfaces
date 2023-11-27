@@ -323,7 +323,7 @@ header .width-1080 button.btn-comprar{
 .seccion1 .spiderRojo {
     position: absolute;
     top: 245px;
-    left: -10%;
+    left: 0;
     z-index: 10;
     transition: .5s linear;
 }
@@ -336,7 +336,7 @@ header .width-1080 button.btn-comprar{
 .seccion1 .spiderNegro {
     position: absolute;
     top: 195px;
-    right: -15%;
+    right: 0;
     z-index: 10;
     transition: .5s linear;
 }
