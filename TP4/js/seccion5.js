@@ -1,10 +1,10 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", function () {
-    const contenedorParallax = document.querySelector("#contenedor-parallax");
+    const contenedor = document.querySelector("#contenedor-parallax");
   
-    contenedorParallax.addEventListener("mousemove", (event) => {
+    contenedor.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
-      const { offsetWidth, offsetHeight } = contenedorParallax;
+      const { offsetWidth, offsetHeight } = contenedor;
   
 
     //  Calcula el centro del contenedor parallax en términos de coordenadas X e Y.
