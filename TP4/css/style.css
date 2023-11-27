@@ -153,7 +153,7 @@ header .width-1080 button.btn-hambur{
 /*----------------animacion menu hamburguesa-------------------------*/
 /* forwards mantiene el estado final de la animación */
 button.btn-hambur:hover div:first-child{
-    animation: animation-up 0.5s linear forwards; 
+    animation: animation-up .5s linear forwards; 
     
 }
 button.btn-hambur:hover div:last-child{
